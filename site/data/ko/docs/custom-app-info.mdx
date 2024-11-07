@@ -10,7 +10,7 @@ description: 앱 정보를 사용자 정의하기
 `RainbowKitProvider`의 `appInfo` 속성에 앱 정보를 전달할 수 있습니다. 수정할 수 있는 속성은 앱의 이름(`appName`)과 연결 모달에서 “자세히 알아보기” 버튼이 리디렉션되는 링크(`learnMoreUrl`)입니다:
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -35,7 +35,7 @@ const App = () => {
 import {
   RainbowKitProvider,
   DisclaimerComponent,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const Disclaimer: DisclaimerComponent = ({ Text, Link }) => (
   <Text>

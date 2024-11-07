@@ -16,7 +16,7 @@ RainbowKit은 [Ethereum 및 NextAuth.js로의 로그인에 대한 first-class �
 예를 들어, [사용자 지정 API 엔드포인트](https://wagmi.sh/examples/sign-in-with-ethereum)에 대해 [Sign-In with Ethereum](https://login.xyz)을 사용할 수 있는 인증 어댑터를 만들 수 있습니다.
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

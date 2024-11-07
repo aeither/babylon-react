@@ -12,7 +12,7 @@ description: カスタムテーマの作成
 組み込みテーマはある程度のカスタマイズを提供しますが、`Theme`タイプを使用すると、基本となるテーマ変数に低レベルでアクセスして独自のカスタムテーマを定義するのに役立ちます。
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -95,7 +95,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 次に、組み込みテーマを上書きしたいテーマトークンとマージします。 この例では、ブランドのアクセントカラーに合わせて`accentColor`トークンを上書きしています。
@@ -137,7 +137,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

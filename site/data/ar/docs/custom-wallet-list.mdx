@@ -12,7 +12,7 @@ description: تخصيص قائمة المحافظ
 على سبيل المثال، يمكنك اختيار إظهار Rainbow والمحافظ الاحتياطية العامة فقط.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 يمكنك بعد ذلك تمرير الموصلات إلى `createConfig` من Wagmi.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ import { zerionWallet } from '@rainbow-me/rainbowkit/wallets';
 عرض ميتا ماسك مع محافظ الوقوع العامة.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 عرض Rainbow و MetaMask و Coinbase بالإضافة إلى المحافظ العامة الأخرى.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ const connectors = connectorsForWallets(
 أوصي بRainbow و MetaMask، ولكن أقدم أيضاً Coinbase بالإضافة إلى المحافظ العامة الأخرى.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

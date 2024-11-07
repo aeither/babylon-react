@@ -14,7 +14,7 @@ description: أظهر معاملاتك الأخيرة
 لاستخدام هذه الميزة، قم أولاً بتمكين خيار `showRecentTransactions` على `RainbowKitProvider`.
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 يمكن بعد ذلك تسجيل المعاملات مع RainbowKit باستخدام الخطاف `useAddRecentTransaction`.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ export default () => {
 بشكل افتراضي، سيتم اعتبار المعاملة مكتملة بمجرد استخراج كتلة واحدة فوق الكتلة التي تم استخراج المعاملة فيها، ولكن يمكن تكوين ذلك بتحديد قيمة `confirmations` مخصصة.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

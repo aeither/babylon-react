@@ -16,7 +16,7 @@ description: เชื่อมต่อกับระบบรับรอง�
 เป็นตัวอย่าง เราสามารถสร้าง adapter สำหรับการรับรองความถูกต้องที่ช่วยให้เราใช้ [Sign-In ด้วย Ethereum](https://login.xyz) อยู่ตรงข้ามกับ [จุดสิ้นสุด API ที่กำหนดเอง.](https://wagmi.sh/examples/sign-in-with-ethereum)
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

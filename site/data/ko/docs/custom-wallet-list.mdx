@@ -12,7 +12,7 @@ description: 지갑 목록 사용자 정의하기
 예를 들어, Rainbow와 일반적인 대체 지갑만 표시하기로 선택할 수 있습니다.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 그런 다음 Wagmi의 `createConfig`에 커넥터를 전달할 수 있습니다.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ import { zerionWallet } from '@rainbow-me/rainbowkit/wallets';
 일반적인 백업 지갑과 함께 MetaMask를 표시합니다.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 Rainbow, MetaMask 및 Coinbase를 일반적인 백업 지갑과 함께 표시합니다.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ const connectors = connectorsForWallets(
 Rainbow과 MetaMask를 추천하되, 일반적인 백업 지갑과 함께 Coinbase도 제공합니다.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

@@ -12,7 +12,7 @@ description: 사용자 정의 테마 생성
 내장 테마는 어느 정도의 사용자 정의 기능을 제공하지만, `Theme` 타입을 사용하여 기본 테마 변수를 낮은 수준에서 액세스하는 사용자 정의 테마를 정의할 수 있습니다.
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -95,7 +95,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 그런 다음, 재정의하려는 테마 토큰과 함께 내장 테마를 병합하십시오. 이 예제에서는 브랜드의 강조 색상에 맞추기 위해 `accentColor` 토큰을 재정의하고 있습니다.
@@ -137,7 +137,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

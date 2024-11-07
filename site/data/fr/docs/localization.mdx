@@ -14,7 +14,7 @@ Si disponible, RainbowKit détectera le [langage préféré](https://developer.m
 Pour spécifier une langue pour vos utilisateurs, ajoutez simplement `locale="zh-CN"` comme une prop dans votre `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ Configurez votre projet Next.js comme l'exemple ci-dessous pour ajouter un sous-
 Puis passez le `locale` fourni par le Pages Router au `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

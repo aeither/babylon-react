@@ -12,7 +12,7 @@ description: 自訂錢包清單
 例如，你可以選擇僅顯示彩虹錢包以及通用的回退錢包。
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 然後，你可以將你的連接器傳遞給 Wagmi 的 `createConfig`。
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ import { zerionWallet } from '@rainbow-me/rainbowkit/wallets';
 顯示 MetaMask 以及通用的備用錢包。
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 顯示 Rainbow、MetaMask 和 Coinbase 以及通用的備用錢包。
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ const connectors = connectorsForWallets(
 推薦部署 Rainbow 和 MetaMask，但也提供 Coinbase 以及通用的備用錢包。
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

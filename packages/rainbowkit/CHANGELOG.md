@@ -291,7 +291,7 @@
 - 8841891: Added real-time balance fetching based on the [Recent Transaction](https://www.rainbowkit.com/docs/recent-transactions) API. As a transaction is confirmed on-chain, the user's gas balance will be updated to reflect the transaction.
 
   ```tsx
-  import { useAddRecentTransaction } from "@rainbow-me/rainbowkit";
+  import { useAddRecentTransaction } from "babylon-react";
 
   export default () => {
     const addRecentTransaction = useAddRecentTransaction();
@@ -411,9 +411,9 @@
   + import { WagmiProvider, http } from 'wagmi'
   - import { configureChains, createConfig } from 'wagmi'
     import { mainnet } from 'wagmi/chains'
-    import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-  - import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit'
-  + import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+    import { RainbowKitProvider } from 'babylon-react'
+  - import { getDefaultWallets, connectorsForWallets } from 'babylon-react'
+  + import { getDefaultConfig } from 'babylon-react'
 
     /* getDefaultWallets is now optional */
   - const { wallets } = getDefaultWallets({
@@ -506,7 +506,7 @@
 
   Reference [our guide](https://www.rainbowkit.com/docs/localization) to learn more about Localization.
 
-- 24b5a88: Improved support for `NodeNext` module resolution to resolve `"@rainbow-me/rainbowkit"' has no exported member 'RainbowKitProvider'` TypeScript warnings
+- 24b5a88: Improved support for `NodeNext` module resolution to resolve `"babylon-react"' has no exported member 'RainbowKitProvider'` TypeScript warnings
 
 - 5a184e9: Fixed a bug where `eth_getBalance` would be called when `showBalance` was set to `false`. Optimized additional provider calls to fetch wallet balances only when a user interacts with the Account modal.
 
@@ -531,7 +531,7 @@
 - 9ce75a65: The new `WalletButton` component helps dApps with custom wallet list implementations adopt RainbowKit and all of it's maintenance-free benefits.
 
   ```tsx
-  import { WalletButton } from '@rainbow-me/rainbowkit';
+  import { WalletButton } from 'babylon-react';
 
   <WalletButton wallet="rainbow" />
   <WalletButton wallet="metamask" />
@@ -566,7 +566,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { tokenaryWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -645,7 +645,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { safepalWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -665,7 +665,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { subWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains, projectId });
   const connectors = connectorsForWallets([
@@ -685,7 +685,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { oktoWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -705,7 +705,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { zealWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -725,7 +725,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { clvWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -745,7 +745,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { desigWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains, projectId });
   const connectors = connectorsForWallets([
@@ -820,7 +820,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { bifrostWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -840,7 +840,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { uniswapWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -860,7 +860,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { coin98Wallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -880,7 +880,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { enkryptWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -900,7 +900,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { frameWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -920,7 +920,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { oneKeyWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -940,7 +940,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { foxWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -981,7 +981,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { coreWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -1001,7 +1001,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { talismanWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -1021,7 +1021,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { safeheronWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -1041,7 +1041,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { frontierWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -1061,7 +1061,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { bitKeepWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -1081,7 +1081,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { tokenPocketWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -1312,7 +1312,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { phantomWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -1332,7 +1332,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { rabbyWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -1354,7 +1354,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { trustWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -1374,7 +1374,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { xdefiWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, projectId, chains });
   const connectors = connectorsForWallets([
@@ -1448,7 +1448,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { zerionWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -1468,7 +1468,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { tahoWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -1488,7 +1488,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { okxWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -1508,7 +1508,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { dawnWallet } from "@rainbow-me/rainbowkit/wallets";
   const { wallets } = getDefaultWallets({ appName, chains });
   const connectors = connectorsForWallets([
@@ -1552,7 +1552,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { bitskiWallet } from "@rainbow-me/rainbowkit/wallets";
   const connectors = connectorsForWallets([
     ...wallets,
@@ -1576,7 +1576,7 @@
   import {
     getDefaultWallets,
     connectorsForWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { mewWallet } from "@rainbow-me/rainbowkit/wallets";
   const connectors = connectorsForWallets([
     ...wallets,
@@ -1764,8 +1764,8 @@
   Note that since wallets are no longer namespaced via the `wallet` object, all wallets now have a `Wallet` suffix.
 
   ```diff
-  -import { connectorsForWallets, wallet } from '@rainbow-me/rainbowkit';
-  +import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+  -import { connectorsForWallets, wallet } from 'babylon-react';
+  +import { connectorsForWallets } from 'babylon-react';
   +import {
   +  injectedWallet,
   +  rainbowWallet,
@@ -1791,7 +1791,7 @@
 - 2e6bb8f: The Steakwallet backwards compatibility layer has been removed. Omni should be used instead, available via the new `@rainbow-me/rainbowkit/wallets` entry point.
 
   ```diff
-  -import { wallet } from '@rainbow-me/rainbowkit';
+  -import { wallet } from 'babylon-react';
   +import { omniWallet } from '@rainbow-me/rainbowkit/wallets';
 
   const wallets = [
@@ -1827,7 +1827,7 @@
   This is an example of a custom wallet that hides itself if another injected connector is available.
 
   ```ts
-  import type Wallet from "@rainbow-me/rainbowkit";
+  import type Wallet from "babylon-react";
   import { InjectedConnector } from "wagmi/connectors/injected";
 
   const myCustomWallet: Wallet = {
@@ -1932,7 +1932,7 @@
 - 3f9013f: Rename Steakwallet to Omni and leave `steak` as a deprecated wallet.
 
   ```
-  import { wallet } from '@rainbow-me/rainbowkit';
+  import { wallet } from 'babylon-react';
 
   const omni = wallet.omni({ chains });
   ```
@@ -2090,7 +2090,7 @@
     useConnectModal,
     useAccountModal,
     useChainModal,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
 
   export const YourApp = () => {
     const { openConnectModal } = useConnectModal();
@@ -2199,7 +2199,7 @@
   If you previously derived RPC URLs from the `chainId` on `createConnector`, you can now remove that logic as `wagmi` now handles RPC URLs internally when used with `configureChains`.
 
   ```diff
-  import { connectorsForWallets, wallet, Chain, Wallet } from '@rainbow-me/rainbowkit';
+  import { connectorsForWallets, wallet, Chain, Wallet } from 'babylon-react';
   import { chain, configureChains } from 'wagmi';
   import { alchemyProvider } from 'wagmi/providers/alchemy';
   import { publicProvider } from 'wagmi/providers/public';
@@ -2318,7 +2318,7 @@
   import {
     apiProvider,
   -  configureChains
-  } from '@rainbow-me/rainbowkit';
+  } from 'babylon-react';
   +import { configureChains } from 'wagmi';
   ```
 
@@ -2329,7 +2329,7 @@
   ```diff
   -import {
   -  apiProvider,
-  -} from '@rainbow-me/rainbowkit';
+  -} from 'babylon-react';
   import { configureChains } from 'wagmi';
   +import { alchemyProvider } from 'wagmi/providers/alchemy';
 
@@ -2345,7 +2345,7 @@
   ```diff
   -import {
   -  apiProvider,
-  -} from '@rainbow-me/rainbowkit';
+  -} from 'babylon-react';
   import { configureChains } from 'wagmi';
   +import { infuraProvider } from 'wagmi/providers/infura';
 
@@ -2361,7 +2361,7 @@
   ```diff
   -import {
   -  apiProvider,
-  -} from '@rainbow-me/rainbowkit';
+  -} from 'babylon-react';
   import { configureChains } from 'wagmi';
   +import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 
@@ -2385,7 +2385,7 @@
   ```diff
   -import {
   -  apiProvider,
-  -} from '@rainbow-me/rainbowkit';
+  -} from 'babylon-react';
   import { configureChains } from 'wagmi';
   +import { publicProvider } from 'wagmi/providers/public';
 
@@ -2405,7 +2405,7 @@
   Example usage:
 
   ```tsx
-  import { wallet } from "@rainbow-me/rainbowkit";
+  import { wallet } from "babylon-react";
 
   const steakwallet = wallet.steak({ chains });
   ```
@@ -2445,8 +2445,8 @@
   **Migration guide**
 
   ```diff
-  -import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit';
-  +import { getDefaultWallets } from '@rainbow-me/rainbowkit';
+  -import { getDefaultWallets, connectorsForWallets } from 'babylon-react';
+  +import { getDefaultWallets } from 'babylon-react';
 
   -const wallets = getDefaultWallets({
   +const { connectors } = getDefaultWallets({
@@ -2459,7 +2459,7 @@
   If you were modifying the wallet list returned from `getDefaultWallets`, you’ll need to destructure the `wallets` property from the returned object.
 
   ```diff
-  import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit';
+  import { getDefaultWallets, connectorsForWallets } from 'babylon-react';
 
   -const wallets = getDefaultWallets({
   +const { wallets } = getDefaultWallets({
@@ -2486,7 +2486,7 @@
   When using a custom accent color:
 
   ```tsx
-  import { RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
+  import { RainbowKitProvider, darkTheme } from "babylon-react";
 
   const App = () => {
     return (
@@ -2505,7 +2505,7 @@
   When using a built-in accent color preset:
 
   ```tsx
-  import { RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
+  import { RainbowKitProvider, darkTheme } from "babylon-react";
 
   const App = () => {
     return (
@@ -2571,7 +2571,7 @@
   If you wish to maintain the existing behavior, a new `mounted` boolean is passed to your render function which allows you to render `null` manually when `mounted` is `false`.
 
   ```diff
-  import { ConnectButton } from '@rainbow-me/rainbowkit';
+  import { ConnectButton } from 'babylon-react';
 
   export default () => (
     <ConnectButton.Custom>
@@ -2666,7 +2666,7 @@
   First enable the `showRecentTransactions` option on `RainbowKitProvider`.
 
   ```tsx
-  import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
+  import { RainbowKitProvider } from "babylon-react";
 
   const App = () => {
     return (
@@ -2680,7 +2680,7 @@
   Transactions can then be registered with RainbowKit using the `useAddRecentTransaction` hook.
 
   ```tsx
-  import { useAddRecentTransaction } from "@rainbow-me/rainbowkit";
+  import { useAddRecentTransaction } from "babylon-react";
 
   export default () => {
     const addRecentTransaction = useAddRecentTransaction();
@@ -2705,7 +2705,7 @@
   By default the transaction will be considered completed once a single block has been mined on top of the block in which the transaction was mined, but this can be configured by specifying a custom `confirmations` value.
 
   ```tsx
-  import { useAddRecentTransaction } from "@rainbow-me/rainbowkit";
+  import { useAddRecentTransaction } from "babylon-react";
 
   export default () => {
     const addRecentTransaction = useAddRecentTransaction();
@@ -2755,7 +2755,7 @@
     RainbowKitProvider,
     Chain,
     getDefaultWallets,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { createClient, WagmiProvider, chain } from "wagmi";
   import { providers } from "ethers";
 
@@ -2810,7 +2810,7 @@
     configureChains,
     getDefaultWallets,
     RainbowKitProvider,
-  } from "@rainbow-me/rainbowkit";
+  } from "babylon-react";
   import { createClient, WagmiProvider, chain } from "wagmi";
   import { providers } from "ethers";
 
@@ -2962,7 +2962,7 @@
   **Example usage**
 
   ```tsx
-  import { wallet, WalletList } from "@rainbow-me/rainbowkit";
+  import { wallet, WalletList } from "babylon-react";
 
   const wallets: WalletList = [
     {

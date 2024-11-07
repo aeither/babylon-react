@@ -14,7 +14,7 @@ L'implémentation par défaut de <code>ConnectButton</code> affichera également
 Pour utiliser cette fonctionnalité, activez d'abord l'option <code>showRecentTransactions</code> sur <code>RainbowKitProvider</code>.
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 Les transactions peuvent ensuite être enregistrées avec RainbowKit en utilisant le hook <code>useAddRecentTransaction</code>.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ Une fois qu'une transaction a été enregistrée avec RainbowKit, son statut ser
 Par défaut, la transaction sera considérée comme terminée une fois qu'un seul bloc aura été miné sur le bloc dans lequel la transaction a été minée, mais cela peut être configuré en spécifiant une valeur de <code>confirmations</code> personnalisée.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

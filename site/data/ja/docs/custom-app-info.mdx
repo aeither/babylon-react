@@ -10,7 +10,7 @@ description: アプリの情報をカスタマイズする
 `RainbowKitProvider` の `appInfo` プロップでアプリの情報を渡すことができます。 `RainbowKitProvider` の `appInfo` プロップでアプリの情報を渡すことができます。 変更できるプロパティは、アプリの名前（`appName`）と、「詳細を見る」ボタンがリダイレクトするリンク（`learnMoreUrl`）です。
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -35,7 +35,7 @@ const App = () => {
 import {
   RainbowKitProvider,
   DisclaimerComponent,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const Disclaimer: DisclaimerComponent = ({ Text, Link }) => (
   <Text>

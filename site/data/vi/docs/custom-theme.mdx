@@ -13,7 +13,7 @@ description: Tạo chủ đề tùy chỉnh
 Mặc dù các chủ đề tích hợp cung cấp một số mức độ tùy chỉnh, loại `Theme` được cung cấp để giúp bạn định nghĩa các chủ đề tùy chỉnh của riêng bạn với quyền truy cập cấp thấp hơn vào các biến chủ đề cơ bản.
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -96,7 +96,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 Sau đó, hợp nhất chủ đề tích hợp, với các token chủ đề bạn muốn ghi đè. Trong ví dụ này, tôi đang ghi đè token `accentColor` để phù hợp với màu nhấn thương hiệu của tôi.
@@ -138,7 +138,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

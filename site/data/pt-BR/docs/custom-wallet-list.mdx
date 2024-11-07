@@ -12,7 +12,7 @@ Você pode importar carteiras individuais de `'@rainbow-me/rainbowkit/wallets'` 
 Por exemplo, você pode optar por mostrar apenas a Rainbow junto com carteiras genéricas de fallback.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 Você pode então passar seus conectores para o `createConfig` do `wagmi`.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ Aqui estão alguns exemplos de exibição de diferentes carteiras, em diferentes
 Mostrar Rainbow, MetaMask e Coinbase juntamente com carteiras genéricas de fallback.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 Mostre MetaMask junto com carteiras genéricas de fallback.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ Você pode usar a chave `groupName` para nomear diferentes grupos de carteira. I
 Recomende Rainbow e MetaMask, mas também ofereça Coinbase juntamente com carteiras genéricas de fallback.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

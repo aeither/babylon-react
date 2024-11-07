@@ -12,7 +12,7 @@ Bạn có thể nhập khẩu các ví cá nhân từ `'@rainbow-me/rainbowkit/w
 Ví dụ, bạn có thể chỉ chọn hiển thị Rainbow cùng với các ví dự phòng chung.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 Sau đó, bạn có thể chuyển các kết nối của mình cho hàm `createConfig` của Wagmi.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ import { zerionWallet } from '@rainbow-me/rainbowkit/wallets';
 Hiển thị MetaMask cùng với các ví dự phòng chung.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 Hiển thị Rainbow, MetaMask và Coinbase cùng với các ví dự phòng chung.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ Bạn có thể sử dụng khóa `groupName` để đặt tên cho các nhóm v
 Đề xuất Rainbow và MetaMask, nhưng cũng cung cấp Coinbase cùng với các ví dự phòng chung.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

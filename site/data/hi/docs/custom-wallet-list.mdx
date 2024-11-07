@@ -12,7 +12,7 @@ description: वॉलेट सूची को कस्टमाइज़ क
 उदाहरण के लिए, आप सामान्य फ़ॉलबैक वॉलेट्स के साथ केवल Rainbow दिखाने का चयन कर सकते हैं।
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 आप अपने कनेक्टर्स को Wagmi के `createConfig` में पास कर सकते हैं।
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ import { zerionWallet } from '@rainbow-me/rainbowkit/wallets';
 मेटामास्क के साथ सामान्य फॉलबैक वॉलेट्स दिखाएं।
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 रेनबो, मेटामास्क और कोइनबेस को सामान्य फ़ॉलबैक वॉलेट्स के साथ दिखाएं।
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ const connectors = connectorsForWallets(
 रेनबो और मेटामास्क की सिफारिश करें, लेकिन सामान्य फ़ॉलबैक वॉलेट्स के साथ कोइनबेस की भी पेशकश करें।
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

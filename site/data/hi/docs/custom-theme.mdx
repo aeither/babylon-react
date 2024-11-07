@@ -12,7 +12,7 @@ description: एक अनुकूलित थीम बनाना
 जबकि बिल्ट-इन थीम्स कुछ हद तक कस्टमाइजेशन प्रदान करती हैं, `Theme` प्रकार आपको अपनी खुद की अनुकूलित थीम्स को परिभाषित करने के लिए निचले स्तर की पहुंच प्रदान करता है।
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -95,7 +95,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 फिर, बिल्ट-इन थीम और उन थीम टोकन को मर्ज करें जिन्हें आप ओवरराइड करना चाहते हैं। इस उदाहरण में, मैं अपनी ब्रांड के एक्सेंट कलर से मेल खाने के लिए `accentColor` टोकन को ओवरराइड कर रहा हूँ।
@@ -137,7 +137,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

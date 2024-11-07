@@ -1,5 +1,5 @@
+import { WalletButton } from "babylon-react";
 import type { NextPage } from "next";
-import { WalletButton } from "@rainbow-me/rainbowkit";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 
 const Home: NextPage = () => {

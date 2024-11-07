@@ -16,7 +16,7 @@ description: 连接到您自己的认证后端
 举个例子，我们可以制作一个让我们使用[以太坊登录](https://login.xyz)对一些[自定义API端点](https://wagmi.sh/examples/sign-in-with-ethereum)的认证适配器。
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

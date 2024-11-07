@@ -10,7 +10,7 @@ description: Tùy chỉnh thông tin ứng dụng của bạn
 Bạn có thể truyền thông tin ứng dụng của mình trong thuộc tính `appInfo` cho `RainbowKitProvider`. Các thuộc tính bạn có thể sửa đổi là tên ứng dụng của bạn (`appName`) và liên kết nơi nút “Tìm hiểu thêm” trong modal kết nối dẫn đến (`learnMoreUrl`):
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -35,7 +35,7 @@ Bạn có thể cung cấp tuyên bố từ chối của riêng mình để hi�
 import {
   RainbowKitProvider,
   DisclaimerComponent,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const Disclaimer: DisclaimerComponent = ({ Text, Link }) => (
   <Text>

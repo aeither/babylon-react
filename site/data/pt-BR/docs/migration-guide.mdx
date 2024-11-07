@@ -39,9 +39,9 @@ npm i @tanstack/react-query
 + import { WagmiProvider, http } from 'wagmi'
 - import { configureChains, createConfig } from 'wagmi'
   import { mainnet } from 'wagmi/chains'
-  import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-- import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit'
-+ import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+  import { RainbowKitProvider } from 'babylon-react'
+- import { getDefaultWallets, connectorsForWallets } from 'babylon-react'
++ import { getDefaultConfig } from 'babylon-react'
 
   /* getDefaultWallets is now optional */
 - const { wallets } = getDefaultWallets({
@@ -138,7 +138,7 @@ Você não precisa mais passar `chains` para `<RainbowKitProvider>`.
 O tipo `Chain` mudou de acordo com o Wagmi v2 e continua a suportar os metadados `iconUrl` e `iconBackground` do RainbowKit.
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 
   const avalanche = {
     id: 43_114,
@@ -179,7 +179,7 @@ const config = getDefaultConfig({
 Exemplo com `createConfig`:
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 + const chains: readonly [Chain, ...Chain[]] = [
 +   {
 +     ...mainnet,
@@ -362,8 +362,8 @@ Se você usa hooks `wagmi` em sua aplicação, você precisará verificar se sua
 Se você está criando uma lista de carteiras personalizada, agora deve importar cada carteira individualmente para reduzir o tamanho do pacote. Observe que, como as carteiras não são mais namespace via o objeto `wallet`, todas as carteiras agora têm um sufixo `Wallet`.
 
 ```diff
--import { connectorsForWallets, wallet } from '@rainbow-me/rainbowkit';
-+import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+-import { connectorsForWallets, wallet } from 'babylon-react';
++import { connectorsForWallets } from 'babylon-react';
 +import {
 +  injectedWallet,
 +  rainbowWallet,
@@ -389,7 +389,7 @@ const wallets = [
 Também observe que a camada de compatibilidade retroativa do Steakwallet foi removida. O Omni deve ser usado em vez disso.
 
 ```diff
--import { wallet } from '@rainbow-me/rainbowkit';
+-import { wallet } from 'babylon-react';
 +import { omniWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const wallets = [
@@ -427,7 +427,7 @@ Removido o parâmetro `chainId` de `createConnector` no tipo `Wallet`.
 Se você anteriormente derivou URLs de RPC do `chainId` no `createConnector`, agora você pode remover essa lógica pois o `wagmi` agora lida internamente com as URLs de RPC quando utilizado com `configureChains`.
 
 ```diff
-import { connectorsForWallets, wallet, Chain, Wallet } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets, wallet, Chain, Wallet } from 'babylon-react';
 import { chain, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -497,7 +497,7 @@ npm i @rainbow-me/rainbowkit@^0.2.0 wagmi@^0.4.2
 Importe `configureChains` do wagmi, em vez do RainbowKit:
 
 ```diff
-- import { configureChains } from '@rainbow-me/rainbowkit';
+- import { configureChains } from 'babylon-react';
 + import { configureChains } from 'wagmi';
 ```
 
@@ -506,7 +506,7 @@ Importe `configureChains` do wagmi, em vez do RainbowKit:
 RainbowKit não exporta mais uma API `apiProvider`. Substitua-o pelo provedor desejado do wagmi.
 
 ```diff
-- import { apiProvider } from '@rainbow-me/rainbowkit';
+- import { apiProvider } from 'babylon-react';
 ```
 
 #### Alchemy

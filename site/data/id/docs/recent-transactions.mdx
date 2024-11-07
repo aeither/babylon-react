@@ -14,7 +14,7 @@ Implementasi `TombolHubung` bawaan juga akan menampilkan indikator pemuatan di s
 Untuk menggunakan fitur ini, aktifkan opsi `showRecentTransactions` di `RainbowKitProvider` terlebih dahulu.
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 Transaksi kemudian dapat didaftarkan dengan RainbowKit menggunakan hook `useAddRecentTransaction`.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ Setelah transaksi didaftarkan dengan RainbowKit, statusnya akan diperbarui setel
 Secara default, transaksi akan dianggap selesai setelah satu blok telah ditambang di atas blok di mana transaksi tersebut ditambang, tetapi ini dapat dikonfigurasi dengan menentukan nilai `confirmations` kustom.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

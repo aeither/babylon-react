@@ -43,7 +43,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 import {
   getDefaultConfig,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { WagmiProvider } from 'wagmi';
 import {
   mainnet,
@@ -66,7 +66,7 @@ Konfigurasikan chain yang Anda inginkan dan hasilkan konektor yang dibutuhkan. A
 
 ```tsx line=4-99
 ...
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 
 const config = getDefaultConfig({
   appName: 'My RainbowKit App',
@@ -101,7 +101,7 @@ const App = () => {
 Kemudian, dalam aplikasi Anda, impor dan render komponen `ConnectButton`.
 
 ```tsx
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from 'babylon-react';
 
 export const YourApp = () => {
   return <ConnectButton />;
@@ -137,7 +137,7 @@ Transport adalah lapisan tengah jaringan yang menangani pengiriman permintaan JS
 **Contoh dengan transport `http`**
 
 ```tsx
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 import { http } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
 

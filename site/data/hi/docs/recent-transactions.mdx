@@ -14,7 +14,7 @@ description: अपने हालिया लेनदेन दिखाए�
 इस सुविधा का उपयोग करने के लिए, पहले `RainbowKitProvider` पर `showRecentTransactions` विकल्प सक्षम करें।
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 लेनदेन को फिर `useAddRecentTransaction` हुक का उपयोग करके RainbowKit के साथ पंजीकृत किया जा सकता है।
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ export default () => {
 डिफ़ॉल्ट रूप से, लेनदेन को पूरा माना जाएगा एक बार एक ब्लॉक माइन हो जाने के बाद जिसमें लेनदेन माइन किया गया था, लेकिन इसे एक कस्टम `confirmations` मान निर्दिष्ट करके कॉन्फ़िगर किया जा सकता है।
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

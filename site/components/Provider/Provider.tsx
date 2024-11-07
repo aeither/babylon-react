@@ -1,4 +1,3 @@
-import { getDefaultConfig, getDefaultWallets } from '@rainbow-me/rainbowkit';
 import {
   argentWallet,
   imTokenWallet,
@@ -7,6 +6,7 @@ import {
   trustWallet,
 } from '@rainbow-me/rainbowkit/wallets';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { getDefaultConfig, getDefaultWallets } from 'babylon-react';
 import type React from 'react';
 import { http, WagmiProvider } from 'wagmi';
 import {

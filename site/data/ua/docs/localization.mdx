@@ -14,7 +14,7 @@ description: Налаштування мови вашого dApp за допом
 Щоб вказати мову для ваших користувачів, просто додайте `locale="zh-CN"` як проп у ваш `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ export const App = () => (
 Потім передайте `locale`, наданий Маршрутизатором Сторінок, до `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

@@ -14,7 +14,7 @@ description: Настройка языка вашего dApp с помощью �
 Чтобы указать язык для ваших пользователей, просто добавьте `locale="zh-CN"` в качестве prop в вашем `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ export const App = () => (
 Затем передайте `locale`, предоставленный роутером Pages, в `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

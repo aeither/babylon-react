@@ -1,4 +1,4 @@
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 import { sepolia } from 'wagmi/chains';
 
 export const config = getDefaultConfig({

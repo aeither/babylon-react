@@ -14,7 +14,7 @@ description: 自定義您的 dApp 語言與內建翻譯
 要指定用戶的語言，只需在 `RainbowKitProvider` 中添加 `locale="zh-CN"` 屬性即可。
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ RainbowKit 的本地化支援在使用[子路徑路由](https://nextjs.org/docs/
 然後將 Pages Router 提供的 `locale` 傳遞給 `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

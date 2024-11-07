@@ -10,7 +10,7 @@ description: 自訂您的應用程式資訊
 您可以在 `RainbowKitProvider` 的 `appInfo` 屬性中傳遞您的應用程式資訊。 您可以修改的屬性包括應用程式名稱 (`appName`) 和連接模態對話框中 “了解更多” 按鈕的重新導向連結 (`learnMoreUrl`)：
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -35,7 +35,7 @@ const App = () => {
 import {
   RainbowKitProvider,
   DisclaimerComponent,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const Disclaimer: DisclaimerComponent = ({ Text, Link }) => (
   <Text>

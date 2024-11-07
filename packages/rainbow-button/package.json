@@ -34,7 +34,7 @@
     "typegen:watch": "tsc --emitDeclarationOnly --watch"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "workspace:*"
+    "babylon-react": "workspace:*"
   },
   "peerDependencies": {
     "react": ">=18",

@@ -39,9 +39,9 @@ npm i @tanstack/react-query
 + import { WagmiProvider, http } from 'wagmi'
 - import { configureChains, createConfig } from 'wagmi'
   import { mainnet } from 'wagmi/chains'
-  import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-- import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit'
-+ import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+  import { RainbowKitProvider } from 'babylon-react'
+- import { getDefaultWallets, connectorsForWallets } from 'babylon-react'
++ import { getDefaultConfig } from 'babylon-react'
 
   /* getDefaultWallets is now optional */
 - const { wallets } = getDefaultWallets({
@@ -138,7 +138,7 @@ Bạn không còn cần truyền `chains` vào `<RainbowKitProvider>`.
 Loại `Chain` đã thay đổi theo Wagmi v2 và tiếp tục hỗ trợ siêu dữ liệu `iconUrl` và `iconBackground` của RainbowKit.
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 
   const avalanche = {
     id: 43_114,
@@ -179,7 +179,7 @@ const config = getDefaultConfig({
 Ví dụ với `createConfig`:
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 + const chains: readonly [Chain, ...Chain[]] = [
 +   {
 +     ...mainnet,
@@ -362,8 +362,8 @@ Nếu bạn sử dụng các hook của `wagmi` trong ứng dụng của mình, 
 Nếu bạn đang tạo một danh sách ví tùy chỉnh, bây giờ bạn phải import từng ví riêng lẻ để giảm kích thước gói. Lưu ý rằng vì các ví không còn được đặt tên qua object `wallet`, tất cả các ví bây giờ có hậu tố `Wallet`.
 
 ```diff
--import { connectorsForWallets, wallet } from '@rainbow-me/rainbowkit';
-+import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+-import { connectorsForWallets, wallet } from 'babylon-react';
++import { connectorsForWallets } from 'babylon-react';
 +import {
 +  injectedWallet,
 +  rainbowWallet,
@@ -389,7 +389,7 @@ const wallets = [
 Cũng lưu ý rằng lớp tương thích ngược của Steakwallet đã bị loại bỏ. Nên sử dụng Omni thay thế.
 
 ```diff
--import { wallet } from '@rainbow-me/rainbowkit';
+-import { wallet } from 'babylon-react';
 +import { omniWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const wallets = [
@@ -427,7 +427,7 @@ Nếu bạn sử dụng các hook của `wagmi` trong ứng dụng của mình, 
 Nếu bạn trước đây đã dẫn xuất các URL RPC từ `chainId` trên `createConnector`, hiện tại bạn có thể loại bỏ logic đó vì `wagmi` hiện xử lý URL RPC nội bộ khi được sử dụng với `configureChains`.
 
 ```diff
-import { connectorsForWallets, wallet, Chain, Wallet } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets, wallet, Chain, Wallet } from 'babylon-react';
 import { chain, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -497,7 +497,7 @@ npm i @rainbow-me/rainbowkit@^0.2.0 wagmi@^0.4.2
 Nhập `configureChains` từ wagmi thay vì RainbowKit:
 
 ```diff
-- import { configureChains } from '@rainbow-me/rainbowkit';
+- import { configureChains } from 'babylon-react';
 + import { configureChains } from 'wagmi';
 ```
 
@@ -506,7 +506,7 @@ Nhập `configureChains` từ wagmi thay vì RainbowKit:
 RainbowKit không còn xuất API `apiProvider` nữa. Thay thế nó với provider mong muốn của bạn từ wagmi.
 
 ```diff
-- import { apiProvider } from '@rainbow-me/rainbowkit';
+- import { apiProvider } from 'babylon-react';
 ```
 
 #### Alchemy

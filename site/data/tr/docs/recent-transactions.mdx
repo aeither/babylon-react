@@ -14,7 +14,7 @@ Varsayılan `ConnectButton` uygulaması, bekleyen herhangi bir işlem varsa kull
 Bu özelliği kullanmak için önce `RainbowKitProvider` üzerinde `showRecentTransactions` seçeneğini etkinleştirin.
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 Bu işlemden sonra işlemler `useAddRecentTransaction` kancası kullanılarak RainbowKit ile kaydedilebilir.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ Bir işlem RainbowKit ile kaydedildikten sonra, tamamlandığında durumu günce
 Varsayılan olarak, işlemin tamamlandığı, işlem yapıldığı bloğun üzerine bir blok daha çıkarıldığında kabul edilir, ancak bu özel bir `confirmations` değeri belirlenerek yapılandırılabilir.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

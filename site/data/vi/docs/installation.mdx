@@ -43,7 +43,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 import {
   getDefaultConfig,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { WagmiProvider } from 'wagmi';
 import {
   mainnet,
@@ -66,7 +66,7 @@ Cấu hình các chuỗi mong muốn của bạn và tạo các kết nối cầ
 
 ```tsx line=4-99
 ...
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 
 const config = getDefaultConfig({
   appName: 'My RainbowKit App',
@@ -101,7 +101,7 @@ const App = () => {
 Sau đó, trong ứng dụng của bạn, nhập và hiển thị thành phần `ConnectButton`.
 
 ```tsx
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from 'babylon-react';
 
 export const YourApp = () => {
   return <ConnectButton />;
@@ -137,7 +137,7 @@ Transport là lớp trung gian mạng xử lý việc gửi các yêu cầu JSON
 **Ví dụ với một transport `http`**
 
 ```tsx
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 import { http } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
 

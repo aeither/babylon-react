@@ -14,7 +14,7 @@ description: 顯示您最近的交易
 要使用此功能，首先在`RainbowKitProvider`上啟用`showRecentTransactions`選項。
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 然後可以使用`useAddRecentTransaction`掛鉤將交易註冊到RainbowKit中。
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ export default () => {
 默認情況下，一旦在交易被挖掘的區塊上再挖掘一個區塊，該交易將被視為已完成，但可以通過指定自定義的`confirmations`值進行配置。
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

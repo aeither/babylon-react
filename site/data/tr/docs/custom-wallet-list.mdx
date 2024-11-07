@@ -12,7 +12,7 @@ description: Cüzdan listesini özelleştirme
 Örneğin, sadece Rainbow ve genel yedek cüzdanları göstermeyi seçebilirsiniz.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 Ardından konnektörlerinizi Wagmi'nin `createConfig`'ine geçirebilirsiniz.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ Farklı cüzdanların farklı sıralamada gösterilmesine dair birkaç örnek bu
 MetaMask ile genel yedek cüzdanları gösterin.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 Rainbow, MetaMask ve Coinbase'i, genel yedek cüzdanlarla birlikte gösterin.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ const connectors = connectorsForWallets(
 Rainbow ve MetaMask'i önerin, ancak Coinbase'i de genel yedek cüzdanlarla birlikte sunun.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

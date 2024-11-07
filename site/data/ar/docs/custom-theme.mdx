@@ -12,7 +12,7 @@ description: إنشاء سمة مخصصة
 بينما توفر السمات المدمجة بعض مستوى من التخصيص، يتم توفير نوع `Theme` لمساعدتك في تعريف سماتك المخصصة مع الوصول إلى متغيرات السمة الأساسية.
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -95,7 +95,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 ثم، ادمج السمة المدمجة مع رموز السمة التي تريد تجاوزها. في هذا المثال، أنا أتجاوز رمز `accentColor` ليتناسب مع لون التمييز الخاص بعلامتي التجارية.
@@ -137,7 +137,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

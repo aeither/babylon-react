@@ -2,10 +2,9 @@ import {
   type Locale,
   WalletButton as RKWalletButton,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { Box } from 'components/Box/Box';
 import { useRouter } from 'next/router';
-import React from 'react';
 import { walletButtons } from './WalletButton.css';
 
 export function WalletButtonDemo() {

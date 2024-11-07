@@ -39,9 +39,9 @@ npm i @tanstack/react-query
 + import { WagmiProvider, http } from 'wagmi'
 - import { configureChains, createConfig } from 'wagmi'
   import { mainnet } from 'wagmi/chains'
-  import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-- import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit'
-+ import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+  import { RainbowKitProvider } from 'babylon-react'
+- import { getDefaultWallets, connectorsForWallets } from 'babylon-react'
++ import { getDefaultConfig } from 'babylon-react'
 
   /* getDefaultWallets is now optional */
 - const { wallets } = getDefaultWallets({
@@ -138,7 +138,7 @@ const config = getDefaultConfig({
 Wagmi v2에 맞게 `Chain` 유형이 변경되었으며 RainbowKit의 `iconUrl` 및 `iconBackground` 메타데이터를 계속 지원합니다.
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 
   const avalanche = {
     id: 43_114,
@@ -179,7 +179,7 @@ const config = getDefaultConfig({
 `createConfig` 사용 예시:
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 + const chains: readonly [Chain, ...Chain[]] = [
 +   {
 +     ...mainnet,
@@ -362,8 +362,8 @@ npm i @rainbow-me/rainbowkit@^0.8.0 wagmi@^0.8.0
 커스텀 월렛 목록을 생성하는 경우, 번들 사이즈를 줄이기 위해 이제 각 월렛을 개별적으로 가져와야 합니다. `wallet` 객체를 통해 네임스페이스화되지 않은 월렛들은 이제 모두 `Wallet` 접미사를 가지고 있다는 점을 주목해주세요.
 
 ```diff
--import { connectorsForWallets, wallet } from '@rainbow-me/rainbowkit';
-+import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+-import { connectorsForWallets, wallet } from 'babylon-react';
++import { connectorsForWallets } from 'babylon-react';
 +import {
 +  injectedWallet,
 +  rainbowWallet,
@@ -389,7 +389,7 @@ const wallets = [
 Steakwallet의 후방 호환성 레이어가 제거되었다는 점도 알려드립니다. 대신 Omni를 사용해야 합니다.
 
 ```diff
--import { wallet } from '@rainbow-me/rainbowkit';
+-import { wallet } from 'babylon-react';
 +import { omniWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const wallets = [
@@ -427,7 +427,7 @@ npm i @rainbow-me/rainbowkit@^0.4.0 wagmi@^0.5.0
 `createConnector`에서 `chainId`로부터 RPC URL을 이전에 파생시켰다면, `wagmi`가 이제 `configureChains`와 함께 사용될 때 RPC URL을 내부적으로 처리하므로 해당 로직을 제거할 수 있습니다.
 
 ```diff
-import { connectorsForWallets, wallet, Chain, Wallet } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets, wallet, Chain, Wallet } from 'babylon-react';
 import { chain, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -497,7 +497,7 @@ npm i @rainbow-me/rainbowkit@^0.2.0 wagmi@^0.4.2
 RainbowKit 대신 wagmi에서 `configureChains`를 가져오세요:
 
 ```diff
-- import { configureChains } from '@rainbow-me/rainbowkit';
+- import { configureChains } from 'babylon-react';
 + import { configureChains } from 'wagmi';
 ```
 
@@ -506,7 +506,7 @@ RainbowKit 대신 wagmi에서 `configureChains`를 가져오세요:
 RainbowKit는 더 이상 `apiProvider` API를 내보내지 않습니다. wagmi에서 원하는 공급자로 교체하세요.
 
 ```diff
-- import { apiProvider } from '@rainbow-me/rainbowkit';
+- import { apiProvider } from 'babylon-react';
 ```
 
 #### 알케미

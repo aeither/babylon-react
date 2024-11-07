@@ -12,7 +12,7 @@ description: การปรับแต่งรายการ wallet
 ตัวอย่างเช่น คุณสามารถเลือกแสดงเฉพาะ Rainbow พร้อมกับ wallet ที่เป็นทั่วไป
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 คุณสามารถส่งตัวเชื่อมต่อของคุณไปยัง `createConfig` ของ Wagmi
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ import { zerionWallet } from '@rainbow-me/rainbowkit/wallets';
 แสดง MetaMask พร้อมกับกระเป๋าสตางค์ fallback ทั่วไป.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 แสดง Rainbow, MetaMask และ Coinbase พร้อมกับกระเป๋าเงิน fallback ทั่วไป
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ const connectors = connectorsForWallets(
 แนะนำ Rainbow และ MetaMask, แต่ยังเสนอ Coinbase พร้อมกับกระเป๋าเงิน fallback ทั่วไป
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

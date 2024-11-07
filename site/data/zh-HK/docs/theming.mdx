@@ -18,7 +18,7 @@ description: 使用及自訂主題
 主題函數返回一個主題對象。 您可以將該對象傳遞給 `RainbowKitProvider` 的 `theme` 屬性。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -30,7 +30,7 @@ export const App = () => (
 如果您願意，您可以傳入 `accentColor`、`accentColorForeground`、`borderRadius`、`fontStack` 和 `overlayBlur` 來自訂它們。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider
@@ -101,7 +101,7 @@ export const App = () => (
 例如，要使用紫色的輔色和 `medium` 的邊框半徑來自訂暗主題：
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -122,7 +122,7 @@ const App = () => {
 每個主題還提供了幾個輔色預設（`blue`、`green`、`orange`、`pink`、`purple`、`red`），可以傳遞到選項對象中。 例如，要使用 `pink` 輔色預設：
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -147,7 +147,7 @@ const App = () => {
 使用 `darkTheme` 主題。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -162,7 +162,7 @@ export const App = () => (
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={midnightTheme()} {...etc}>
@@ -178,7 +178,7 @@ export const App = () => (
 將輔色設置為自訂的紫色值。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -198,7 +198,7 @@ const App = () => {
 將輔色設置為內建的 `green` 預設。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -221,7 +221,7 @@ const App = () => {
 將邊框半徑設置為 `medium`。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -240,7 +240,7 @@ const App = () => {
 將邊框半徑設置為 `none`。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -265,7 +265,7 @@ const App = () => {
 將字體堆棧設置為 `system`。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -288,7 +288,7 @@ const App = () => {
 將覆蓋模糊設置為 `small`。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -314,7 +314,7 @@ const App = () => {
 - 將字體堆棧設置為 `system`
 
 ```tsx
-import { RainbowKitProvider, lightTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, lightTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -342,7 +342,7 @@ const App = () => {
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (
@@ -369,7 +369,7 @@ import {
   RainbowKitProvider,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => (
   <RainbowKitProvider

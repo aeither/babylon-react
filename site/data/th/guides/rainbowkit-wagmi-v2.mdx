@@ -37,9 +37,9 @@ npm i @tanstack/react-query
 + import { WagmiProvider, http } from 'wagmi'
 - import { configureChains, createConfig } from 'wagmi'
   import { mainnet } from 'wagmi/chains'
-  import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-- import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit'
-+ import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+  import { RainbowKitProvider } from 'babylon-react'
+- import { getDefaultWallets, connectorsForWallets } from 'babylon-react'
++ import { getDefaultConfig } from 'babylon-react'
 
   /* getDefaultWallets is now optional */
 - const { wallets } = getDefaultWallets({
@@ -136,7 +136,7 @@ const config = getDefaultConfig({
 ประเภทของ `Chain` ได้เปลี่ยนแปลงตาม Wagmi v2 และยังคงสนับสนุน metadata `iconUrl` และ `iconBackground` ของ RainbowKit
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 
   const avalanche = {
     id: 43_114,
@@ -177,7 +177,7 @@ const config = getDefaultConfig({
 ตัวอย่างโดยใช้ `createConfig`:
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 + const chains: readonly [Chain, ...Chain[]] = [
 +   {
 +     ...mainnet,

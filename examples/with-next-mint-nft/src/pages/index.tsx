@@ -1,15 +1,15 @@
-import React from 'react';
-import Image from 'next/legacy/image';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from 'babylon-react';
 import type { NextPage } from 'next';
+import Image from 'next/legacy/image';
+import React from 'react';
 import {
   useAccount,
   useReadContract,
   useWaitForTransactionReceipt,
   useWriteContract,
 } from 'wagmi';
-import { abi } from '../../contract-abi';
 import FlipCard, { BackCard, FrontCard } from '../../components/FlipCard';
+import { abi } from '../../contract-abi';
 
 const contractConfig = {
   address: '0x86fbbb1254c39602a7b067d5ae7e5c2bdfd61a30',

@@ -14,7 +14,7 @@ description: Criando um tema personalizado
 Embora os temas integrados forneçam algum nível de personalização, o tipo `Theme` é fornecido para ajudá-lo a definir seus próprios temas personalizados com acesso de nível inferior às variáveis de tema subjacentes.
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -97,7 +97,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 Então, funda o tema embutido, com os tokens de tema que você gostaria de substituir. Neste exemplo, estou substituindo o token `accentColor` para combinar com a cor de destaque da minha marca.
@@ -139,7 +139,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

@@ -13,7 +13,7 @@ description: Створення користувацької теми
 Хоча вбудовані теми забезпечують певний рівень налаштування, тип `Theme` дозволяє визначити власні користувацькі теми з доступом до базових змінних теми.
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -96,7 +96,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 Потім об'єднайте вбудовану тему з токенами теми, які ви хочете перевизначити. У цьому прикладі я перевизначаю токен `accentColor` щоб відповідати акцентному кольору мого бренду.
@@ -138,7 +138,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

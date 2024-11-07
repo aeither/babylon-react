@@ -18,7 +18,7 @@ description: 使用和自訂主題
 主題函數會返回一個主題對象。 您可以將對象傳遞給 `RainbowKitProvider` 的 `theme` 屬性。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -30,7 +30,7 @@ export const App = () => (
 如果您願意，您可以傳入 `accentColor`、`accentColorForeground`、`borderRadius`、`fontStack` 和 `overlayBlur` 來自定義它們。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider
@@ -101,7 +101,7 @@ export const App = () => (
 每個主題還提供數個強調色預設值（`blue`、`green`、`orange`、`pink`、`purple`、`red`），可以展開到選項對象中。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -122,7 +122,7 @@ const App = () => {
 每個主題還提供幾個強調色預設（`blue`、`green`、`orange`、`pink`、`purple`、`red`），可以擴展到選項對象中。 主題函數
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -147,7 +147,7 @@ const App = () => {
 強調色
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -162,7 +162,7 @@ export const App = () => (
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={midnightTheme()} {...etc}>
@@ -178,7 +178,7 @@ export const App = () => (
 邊框半徑
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -198,7 +198,7 @@ const App = () => {
 以下是一些不同的方式來使用`borderRadius`配置。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -221,7 +221,7 @@ const App = () => {
 提醒：可用的邊框半徑值有：`large`（預設）、`medium`、`small` 和 `none`。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -240,7 +240,7 @@ const App = () => {
 字體堆疊
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -265,7 +265,7 @@ const App = () => {
 默認情況下，`overlayBlur`設置為`none`。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -288,7 +288,7 @@ const App = () => {
 這裡有一些不同的方式來一起使用不同的主題，連同`accentColor`、`borderRadius`和`fontStack`屬性。
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -314,7 +314,7 @@ const App = () => {
 - 將強調色設定為內建的`pink`預設值。
 
 ```tsx
-import { RainbowKitProvider, lightTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, lightTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -342,7 +342,7 @@ const App = () => {
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (
@@ -369,7 +369,7 @@ import {
   RainbowKitProvider,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => (
   <RainbowKitProvider

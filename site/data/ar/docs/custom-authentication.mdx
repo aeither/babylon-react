@@ -16,7 +16,7 @@ description: الاتصال بنظام المصادقة الخلفي الخاص 
 كمثال، يمكننا صنع محولاً للمصادقة يتيح لنا استخدام [تسجيل الدخول باستخدام Ethereum](https://login.xyz) ضد بعض [النقاط النهائية المخصصة لواجهة برمجة التطبيقات.](https://wagmi.sh/examples/sign-in-with-ethereum)
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

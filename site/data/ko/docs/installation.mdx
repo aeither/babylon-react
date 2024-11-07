@@ -43,7 +43,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 import {
   getDefaultConfig,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { WagmiProvider } from 'wagmi';
 import {
   mainnet,
@@ -66,7 +66,7 @@ import {
 
 ```tsx line=4-99
 ...
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 
 const config = getDefaultConfig({
   appName: 'My RainbowKit App',
@@ -101,7 +101,7 @@ const App = () => {
 그런 다음, 앱에서 `ConnectButton` 컴포넌트를 가져와서 렌더링합니다.
 
 ```tsx
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from 'babylon-react';
 
 export const YourApp = () => {
   return <ConnectButton />;
@@ -137,7 +137,7 @@ Transport는 JSON-RPC 요청을 Ethereum Node Provider (예: Alchemy, Infura 등
 **`http` 트랜스포트 예제**
 
 ```tsx
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 import { http } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
 

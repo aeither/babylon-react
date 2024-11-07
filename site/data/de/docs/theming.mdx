@@ -18,7 +18,7 @@ Es gibt 3 eingebaute Themenfunktionen:
 Eine Themenfunktion gibt ein Themenobjekt zurück. Sie können das Objekt an die `RainbowKitProvider`-`theme`-Eigenschaft übergeben.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -30,7 +30,7 @@ export const App = () => (
 Wenn Sie möchten, können Sie `accentColor`, `accentColorForeground`, `borderRadius`, `fontStack` und `overlayBlur` übergeben, um sie anzupassen.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider
@@ -101,7 +101,7 @@ Die eingebauten Themenfunktionen akzeptieren auch ein Optionsobjekt, das Ihnen e
 Zum Beispiel, um das dunkle Thema mit einer lila Akzentfarbe und einer `medium` Rahmenradius-Skala anzupassen:
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -122,7 +122,7 @@ const App = () => {
 Jedes Thema bietet auch mehrere vordefinierte Akzentfarben (`blue`, `green`, `orange`, `pink`, `purple`, `red`), die in das Optionsobjekt aufgenommen werden können. Zum Beispiel, um das `pink` Akzentfarb-Preset zu verwenden:
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -147,7 +147,7 @@ Hier sind einige verschiedene Möglichkeiten, wie Sie die `theme`-Eigenschaft ve
 Verwenden Sie das `darkTheme`-Thema.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -162,7 +162,7 @@ Verwenden Sie das `midnightTheme`-Thema.
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={midnightTheme()} {...etc}>
@@ -178,7 +178,7 @@ Hier sind einige verschiedene Möglichkeiten, wie Sie die `accentColor`-Konfigur
 Setzen Sie die Akzentfarbe auf einen benutzerdefinierten lila Wert.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -198,7 +198,7 @@ const App = () => {
 Setzen Sie die Akzentfarbe auf das eingebaute `green`-Preset.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -221,7 +221,7 @@ Hier sind einige verschiedene Möglichkeiten, wie Sie die `borderRadius`-Konfigu
 Setzen Sie den Rahmenradius auf `medium`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -240,7 +240,7 @@ const App = () => {
 Setzen Sie den Rahmenradius auf `none`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -265,7 +265,7 @@ Standardmäßig ist der `fontStack` auf `rounded` eingestellt. Hier erfahren Sie
 Setzen Sie den Schriftstapel auf `system`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -288,7 +288,7 @@ Standardmäßig ist die `overlayBlur` auf `none` eingestellt. Hier erfahren Sie,
 Setzen Sie die Overlay-Unschärfe auf `small`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -314,7 +314,7 @@ Hier sind einige verschiedene Möglichkeiten, wie Sie verschiedene Themen mit de
 - Setzen Sie den Schriftstapel auf `system`
 
 ```tsx
-import { RainbowKitProvider, lightTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, lightTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -342,7 +342,7 @@ const App = () => {
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (
@@ -369,7 +369,7 @@ import {
   RainbowKitProvider,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => (
   <RainbowKitProvider

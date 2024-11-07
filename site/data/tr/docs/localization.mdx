@@ -14,7 +14,7 @@ Mevcutsa, RainbowKit kullanıcının [tercih edilen dilini](https://developer.mo
 Kullanıcılarınız için bir dil belirtmek için, sadece `RainbowKitProvider`'ınızda bir prop olarak `locale="zh-CN"` ekleyin
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ Aşağıdaki örnekte olduğu gibi Next.js projenizi yapılandırın ve rotalar�
 Sonra, Sayfalar Yönlendiricisi tarafından sağlanan `locale`'yi `RainbowKitProvider`'a geçirin
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

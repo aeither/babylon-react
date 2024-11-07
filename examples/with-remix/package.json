@@ -9,7 +9,7 @@
     "start": "remix-serve build/index.js"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "workspace:*",
+    "babylon-react": "workspace:*",
     "@remix-run/node": "^2.9.2",
     "@remix-run/react": "^2.9.2",
     "@remix-run/serve": "^2.9.2",

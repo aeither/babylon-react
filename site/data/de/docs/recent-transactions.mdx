@@ -14,7 +14,7 @@ Die Standardimplementierung des `ConnectButton` zeigt auch einen Ladeindikator u
 Um diese Funktion zu nutzen, aktivieren Sie zuerst die `showRecentTransactions`-Option auf `RainbowKitProvider`.
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 Transaktionen können dann mit RainbowKit über den `useAddRecentTransaction` Hook registriert werden.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ Sobald eine Transaktion bei RainbowKit registriert wurde, wird ihr Status nach A
 Standardmäßig wird die Transaktion als abgeschlossen betrachtet, sobald ein einziger Block auf dem Block abgebaut wurde, in dem die Transaktion abgebaut wurde. Dies kann jedoch durch Angabe eines benutzerdefinierten `confirmations`-Wertes konfiguriert werden.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

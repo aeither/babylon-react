@@ -16,7 +16,7 @@ Mặc dù RainbowKit cung cấp [hỗ trợ hạng nhất cho Đăng nhập bằ
 Lấy ví dụ, chúng ta có thể tạo bộ điều hợp xác thực cho phép chúng ta sử dụng [Đăng nhập bằng Ethereum](https://login.xyz) với một số [điểm cuối API tùy chỉnh.](https://wagmi.sh/examples/sign-in-with-ethereum)
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

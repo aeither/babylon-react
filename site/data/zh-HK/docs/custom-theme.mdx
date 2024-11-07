@@ -12,7 +12,7 @@ description: 建立自訂主題
 雖然內建主題提供了一定程度的自訂性，但 `Theme` 類型可幫助您定義自己的自訂主題，並提供較低層級的主題變量存取。
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -95,7 +95,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 然後，將內建主題與您想要覆蓋的主題標記合併。 在此範例中，我正在覆蓋 `accentColor` 標記以匹配我品牌的重點顏色。
@@ -137,7 +137,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

@@ -14,7 +14,7 @@ description: تخصيص لغة تطبيقك اللامركزي باستخدام 
 لتحديد لغة لمستخدميك، فقط أضف `locale="zh-CN"` كخاصية في `RainbowKitProvider` الخاص بك
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ export const App = () => (
 ثم قم بتمرير `locale` الذي تم توفيره بواسطة Pages Router إلى `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

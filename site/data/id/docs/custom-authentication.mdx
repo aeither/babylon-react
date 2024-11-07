@@ -16,7 +16,7 @@ Pertama, buat adaptor otentikasi. Ini memungkinkan RainbowKit untuk membuat/memp
 Sebagai contoh, kita bisa membuat adaptor otentikasi yang memungkinkan kita menggunakan [Sign-In dengan Ethereum](https://login.xyz) melawan beberapa [titik akhir API kustom.](https://wagmi.sh/examples/sign-in-with-ethereum)
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

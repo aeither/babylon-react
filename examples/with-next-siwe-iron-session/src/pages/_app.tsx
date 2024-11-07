@@ -1,19 +1,19 @@
 // This example is based on the wagmi SIWE tutorial
 // https://wagmi.sh/examples/sign-in-with-ethereum
-import '../styles/global.css';
 import '@rainbow-me/rainbowkit/styles.css';
 import type { AppProps } from 'next/app';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import '../styles/global.css';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { WagmiProvider } from 'wagmi';
 import {
-  RainbowKitProvider,
+  AuthenticationStatus,
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
-  AuthenticationStatus,
-} from '@rainbow-me/rainbowkit';
+  RainbowKitProvider,
+} from 'babylon-react';
 import { createSiweMessage } from 'viem/siwe';
+import { WagmiProvider } from 'wagmi';
 
 import { config } from '../wagmi';
 

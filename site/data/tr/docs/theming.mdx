@@ -18,7 +18,7 @@ RainbowKit UI'yi markanıza uyacak şekilde ayarlayabilirsiniz. Birkaç önceden
 Bir tema fonksiyonu bir tema nesnesi döndürür. Nesneyi `RainbowKitProvider`'ın `theme` özelliğine geçirebilirsiniz.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -30,7 +30,7 @@ export const App = () => (
 İsterseniz, `accentColor`, `accentColorForeground`, `borderRadius`, `fontStack` ve `overlayBlur`'u özelleştirebilmek için içlerine geçirebilirsiniz.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider
@@ -101,7 +101,7 @@ Dahili tema fonksiyonları ayrıca bir seçenekler nesnesini kabul eder, size bi
 Örneğin, koyu temayı mor bir aksan rengi ve `orta` bir kenar yarıçapı ölçeği ile özelleştirmek için:
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -122,7 +122,7 @@ const App = () => {
 Her tema ayrıca (`mavi`, `yeşil`, `turuncu`, `pembe`, `mor`, `kırmızı`) olmak üzere birçok aksan rengi ön ayarını seçenekler nesnesine yayabilir. Örneğin, `pembe` aksan rengi ön ayarını kullanmak için:
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -147,7 +147,7 @@ const App = () => {
 `darkTheme` temasını kullanın.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -162,7 +162,7 @@ export const App = () => (
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={midnightTheme()} {...etc}>
@@ -178,7 +178,7 @@ export const App = () => (
 Vurgu rengini özel bir mor değere ayarlayın.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -198,7 +198,7 @@ const App = () => {
 Vurgu rengini dahili `green` ön ayarına ayarlayın.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -221,7 +221,7 @@ const App = () => {
 Kenar yarıçapını `medium` olarak ayarlayın.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -240,7 +240,7 @@ const App = () => {
 Kenar yarıçapını `none` olarak ayarlayın.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -265,7 +265,7 @@ Varsayılan olarak, `fontStack` `rounded` olarak ayarlanmıştır. Ama işte `fo
 Font yığınını `system` olarak ayarlayın.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -288,7 +288,7 @@ Varsayılan olarak, `overlayBlur` `none` olarak ayarlanmıştır. Ama işte `ove
 Üst örtü bulanıklığını `small` olarak ayarlayın.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -314,7 +314,7 @@ const App = () => {
 - Yazı tipi yığınını `system` olarak ayarlayın
 
 ```tsx
-import { RainbowKitProvider, lightTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, lightTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -342,7 +342,7 @@ const App = () => {
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (
@@ -369,7 +369,7 @@ import {
   RainbowKitProvider,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => (
   <RainbowKitProvider

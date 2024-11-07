@@ -2,12 +2,17 @@ import '@rainbow-me/rainbowkit/styles.css';
 import './global.css';
 
 import type { Session } from 'next-auth';
-import { SessionProvider, signOut } from 'next-auth/react';
+import { SessionProvider } from 'next-auth/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
+import {
+  type GetSiweMessageOptions,
+  RainbowKitSiweNextAuthProvider,
+} from '@rainbow-me/rainbowkit-siwe-next-auth';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import {
   type AvatarComponent,
   type DisclaimerComponent,
@@ -16,12 +21,7 @@ import {
   darkTheme,
   lightTheme,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
-import {
-  type GetSiweMessageOptions,
-  RainbowKitSiweNextAuthProvider,
-} from '@rainbow-me/rainbowkit-siwe-next-auth';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+} from 'babylon-react';
 import { WagmiProvider, useDisconnect } from 'wagmi';
 
 import type { AppContextProps } from '../lib/AppContextProps';
@@ -181,7 +181,7 @@ function RainbowKitApp({
         >
           <Component {...pageProps} {...appContextProps} />
 
-          {isMounted && (
+          {/* {isMounted && (
             <>
               <div
                 style={{
@@ -502,7 +502,7 @@ function RainbowKitApp({
                 </div>
               </div>
             </>
-          )}
+          )} */}
         </div>
       </RainbowKitProvider>
     </RainbowKitSiweNextAuthProvider>

@@ -39,9 +39,9 @@ npm i @tanstack/react-query
 + import { WagmiProvider, http } from 'wagmi'
 - import { configureChains, createConfig } from 'wagmi'
   import { mainnet } from 'wagmi/chains'
-  import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-- import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit'
-+ import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+  import { RainbowKitProvider } from 'babylon-react'
+- import { getDefaultWallets, connectorsForWallets } from 'babylon-react'
++ import { getDefaultConfig } from 'babylon-react'
 
   /* getDefaultWallets is now optional */
 - const { wallets } = getDefaultWallets({
@@ -138,7 +138,7 @@ const config = getDefaultConfig({
 与Wagmi v2一致，`Chain`类型已经改变，并继续支持 RainbowKit 的`iconUrl`和`iconBackground`元数据。
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 
   const avalanche = {
     id: 43_114,
@@ -179,7 +179,7 @@ const config = getDefaultConfig({
 使用`createConfig`的例子：
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 + const chains: readonly [Chain, ...Chain[]] = [
 +   {
 +     ...mainnet,
@@ -362,8 +362,8 @@ npm i @rainbow-me/rainbowkit@^0.8.0 wagmi@^0.8.0
 如果您正在创建一个自定义的钱包列表，那么现在您必须单独导入每一个钱包，以减少包的大小。 请注意，由于钱包不再通过 `wallet` 对象进行命名空间命名，所有的钱包现在都有一个 `Wallet` 后缀。
 
 ```diff
--import { connectorsForWallets, wallet } from '@rainbow-me/rainbowkit';
-+import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+-import { connectorsForWallets, wallet } from 'babylon-react';
++import { connectorsForWallets } from 'babylon-react';
 +import {
 +  injectedWallet,
 +  rainbowWallet,
@@ -389,7 +389,7 @@ const wallets = [
 同样请注意，Steakwallet 的向后兼容层已被移除。 应该使用 Omni 代替。
 
 ```diff
--import { wallet } from '@rainbow-me/rainbowkit';
+-import { wallet } from 'babylon-react';
 +import { omniWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const wallets = [
@@ -427,7 +427,7 @@ npm i @rainbow-me/rainbowkit@^0.4.0 wagmi@^0.5.0
 如果你之前在`createConnector`上从`chainId`派生出RPC URLs，现在你可以去掉这个逻辑，因为当与`configureChains`一起使用时，`wagmi`现在内部处理RPC URLs。
 
 ```diff
-import { connectorsForWallets, wallet, Chain, Wallet } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets, wallet, Chain, Wallet } from 'babylon-react';
 import { chain, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -497,7 +497,7 @@ npm i @rainbow-me/rainbowkit@^0.2.0 wagmi@^0.4.2
 从wagmi导入`configureChains`而不是从RainbowKit:
 
 ```diff
-- import { configureChains } from '@rainbow-me/rainbowkit';
+- import { configureChains } from 'babylon-react';
 + import { configureChains } from 'wagmi';
 ```
 
@@ -506,7 +506,7 @@ npm i @rainbow-me/rainbowkit@^0.2.0 wagmi@^0.4.2
 RainbowKit不再导出`apiProvider` API。 将其替换为您从wagmi选择的所需的提供商。
 
 ```diff
-- import { apiProvider } from '@rainbow-me/rainbowkit';
+- import { apiProvider } from 'babylon-react';
 ```
 
 #### Alchemy

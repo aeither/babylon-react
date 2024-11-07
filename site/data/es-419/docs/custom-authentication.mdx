@@ -16,7 +16,7 @@ Primero crea un adaptador de autenticación. Esto permite a RainbowKit crear/pre
 Como ejemplo, podríamos hacer un adaptador de autenticación que nos permita utilizar [Sign-In con Ethereum](https://login.xyz) contra algunos [puntos finales de API personalizados.](https://wagmi.sh/examples/sign-in-with-ethereum)
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

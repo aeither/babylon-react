@@ -43,7 +43,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 import {
   getDefaultConfig,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { WagmiProvider } from 'wagmi';
 import {
   mainnet,
@@ -66,7 +66,7 @@ Configure sus cadenas deseadas y genere los conectores requeridos. También nece
 
 ```tsx line=4-99
 ...
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 
 const config = getDefaultConfig({
   appName: 'My RainbowKit App',
@@ -101,7 +101,7 @@ const App = () => {
 Luego, en tu aplicación, importa y renderiza el componente `ConnectButton`.
 
 ```tsx
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ConnectButton } from 'babylon-react';
 
 export const YourApp = () => {
   return <ConnectButton />;
@@ -137,7 +137,7 @@ Un Transport es la capa intermedia de red que maneja el envío de solicitudes JS
 **Ejemplo con un transporte `http`**
 
 ```tsx
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 import { http } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
 

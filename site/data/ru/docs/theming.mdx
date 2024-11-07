@@ -18,7 +18,7 @@ description: Использование и настройка тем
 Функция темы возвращает объект темы. Вы можете передать объект свойству `theme` провайдера `RainbowKitProvider`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -30,7 +30,7 @@ export const App = () => (
 Если вы хотите, можно передать `accentColor`, `accentColorForeground`, `borderRadius`, `fontStack` и `overlayBlur` для их настройки.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider
@@ -101,7 +101,7 @@ export const App = () => (
 Например, чтобы настроить темную тему с фиолетовым акцентным цветом и радиусом границы `medium`:
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -122,7 +122,7 @@ const App = () => {
 Каждая тема также предлагает несколько предустановленных акцентных цветов (`blue`, `green`, `orange`, `pink`, `purple`, `red`) которые можно добавить в объект опций. Например, чтобы использовать предустановленный акцентный цвет `pink`:
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -147,7 +147,7 @@ const App = () => {
 Используйте тему `darkTheme`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={darkTheme()} {...etc}>
@@ -162,7 +162,7 @@ export const App = () => (
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider theme={midnightTheme()} {...etc}>
@@ -178,7 +178,7 @@ export const App = () => (
 Установите акцентный цвет на пользовательское значение фиолетового.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -198,7 +198,7 @@ const App = () => {
 Установите акцентный цвет на встроенный предустановленный `green`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -221,7 +221,7 @@ const App = () => {
 Установите радиус границы на `medium`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -240,7 +240,7 @@ const App = () => {
 Установите радиус границы на `none`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -265,7 +265,7 @@ const App = () => {
 Установите набор шрифтов на `system`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -288,7 +288,7 @@ const App = () => {
 Установите размытие наложения на `small`.
 
 ```tsx
-import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, darkTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -314,7 +314,7 @@ const App = () => {
 - Установите набор шрифтов на `system`
 
 ```tsx
-import { RainbowKitProvider, lightTheme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, lightTheme } from 'babylon-react';
 
 const App = () => {
   return (
@@ -342,7 +342,7 @@ const App = () => {
 import {
   RainbowKitProvider,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (
@@ -369,7 +369,7 @@ import {
   RainbowKitProvider,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => (
   <RainbowKitProvider

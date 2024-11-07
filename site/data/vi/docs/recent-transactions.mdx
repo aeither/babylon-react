@@ -14,7 +14,7 @@ Mặc định, triển khai `ConnectButton` cũng sẽ hiển thị chỉ báo �
 Để sử dụng tính năng này, trước tiên hãy bật tùy chọn `showRecentTransactions` trên `RainbowKitProvider`.
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 Các giao dịch sau đó có thể được đăng ký với RainbowKit bằng cách sử dụng hook `useAddRecentTransaction`.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ Một khi giao dịch đã được đăng ký với RainbowKit, trạng thái c
 Mặc định giao dịch sẽ được coi là hoàn thành sau khi một block duy nhất đã được khai thác thêm trên block mà giao dịch đó đã được khai thác, nhưng điều này có thể được cấu hình bằng cách chỉ định giá trị `confirmations` tùy chỉnh.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

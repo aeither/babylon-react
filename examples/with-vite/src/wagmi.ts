@@ -1,5 +1,5 @@
 
-import { getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { getDefaultConfig } from 'babylon-react';
 import { arbitrum, base, mainnet, optimism, polygon } from 'wagmi/chains';
 
 export const config = getDefaultConfig({

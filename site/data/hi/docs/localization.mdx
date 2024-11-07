@@ -14,7 +14,7 @@ description: बिल्ट-इन अनुवाद के साथ अप�
 अपने उपयोगकर्ताओं के लिए एक भाषा निर्दिष्ट करने के लिए, बस `locale="zh-CN"` को अपने `RainbowKitProvider` में एक prop के रूप में जोड़ें
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ RainbowKit का स्थानीयकरण समर्थन [उप-प�
 फिर Pages Router द्वारा प्रदान की गई `locale` को `RainbowKitProvider` को पास करें
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

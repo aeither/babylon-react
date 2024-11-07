@@ -1,4 +1,3 @@
-import { type Chain, getDefaultConfig } from '@rainbow-me/rainbowkit';
 import {
   argentWallet,
   bestWallet,
@@ -60,6 +59,7 @@ import {
   zealWallet,
   zerionWallet,
 } from '@rainbow-me/rainbowkit/wallets';
+import { type Chain, getDefaultConfig } from 'babylon-react';
 import { publicActions } from 'viem';
 import {
   arbitrum,

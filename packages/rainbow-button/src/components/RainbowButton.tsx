@@ -1,5 +1,5 @@
-import { RainbowKitProvider, WalletButton } from '@rainbow-me/rainbowkit';
 import type { RainbowKitProviderProps } from '@rainbow-me/rainbowkit/dist/components/RainbowKitProvider/RainbowKitProvider';
+import { RainbowKitProvider, WalletButton } from 'babylon-react';
 import React from 'react';
 
 export function RainbowButtonProvider({

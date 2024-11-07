@@ -5,10 +5,10 @@
   "private": true,
   "main": "index.js",
   "dependencies": {
-    "@rainbow-me/rainbowkit": "workspace:*",
-    "@rainbow-me/rainbowkit-siwe-next-auth": "workspace:*",
     "@rainbow-me/rainbow-button": "workspace:*",
+    "@rainbow-me/rainbowkit-siwe-next-auth": "workspace:*",
     "@tanstack/react-query": "^5.55.3",
+    "babylon-react": "workspace:*",
     "next": "^14.2.10",
     "next-auth": "4.24.5",
     "react": "^18.3.1",
@@ -23,5 +23,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.14"
+  }
 }

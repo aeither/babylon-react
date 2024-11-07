@@ -12,7 +12,7 @@ description: Özel bir tema oluşturma
 Yerleşik temalar bir miktar özelleştirme sağlar, ancak `Theme` türü, temel tema değişkenlerine daha alt düzeyde erişimle kendi özel temalarınızı tanımlamanıza yardımcı olmak için sağlanmıştır.
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -95,7 +95,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 Daha sonra, yerleşik temayı, geçersiz kılmak istediğiniz tema jetonları ile birleştirin. Bu örnekte, markamın vurgu rengine uydurmak için `accentColor` jetonunu geçersiz kılıyorum.
@@ -137,7 +137,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

@@ -39,9 +39,9 @@ npm i @tanstack/react-query
 + import { WagmiProvider, http } from 'wagmi'
 - import { configureChains, createConfig } from 'wagmi'
   import { mainnet } from 'wagmi/chains'
-  import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-- import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit'
-+ import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+  import { RainbowKitProvider } from 'babylon-react'
+- import { getDefaultWallets, connectorsForWallets } from 'babylon-react'
++ import { getDefaultConfig } from 'babylon-react'
 
   /* getDefaultWallets is now optional */
 - const { wallets } = getDefaultWallets({
@@ -138,7 +138,7 @@ const config = getDefaultConfig({
 Wagmi v2 के अनुसार `Chain` प्रकार में परिवर्तन हुआ है, और यह RainbowKit के `iconUrl` और `iconBackground` मेटाडेटा का समर्थन जारी रखता है।
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 
   const avalanche = {
     id: 43_114,
@@ -179,7 +179,7 @@ const config = getDefaultConfig({
 `createConfig` के साथ उदाहरण:
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 + const chains: readonly [Chain, ...Chain[]] = [
 +   {
 +     ...mainnet,
@@ -362,8 +362,8 @@ npm i @rainbow-me/rainbowkit@^0.8.0 wagmi@^0.8.0
 यदि आप एक कस्टम वॉलेट सूची बना रहे हैं, तो आपको बंडल आकार को कम करने के लिए अब प्रत्येक वॉलेट को अलग से आयात करना होगा। ध्यान दें कि चूंकि वॉलेट अब `wallet` वस्तु के माध्यम से नामित नहीं हैं, सभी वॉलेट्स में अब एक `Wallet` प्रत्यय है।
 
 ```diff
--import { connectorsForWallets, wallet } from '@rainbow-me/rainbowkit';
-+import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+-import { connectorsForWallets, wallet } from 'babylon-react';
++import { connectorsForWallets } from 'babylon-react';
 +import {
 +  injectedWallet,
 +  rainbowWallet,
@@ -389,7 +389,7 @@ const wallets = [
 यह भी ध्यान दें कि Steakwallet पिछड़ा संगतता परत हटा दी गई है। इसके बजाय Omni का उपयोग किया जाना चाहिए।
 
 ```diff
--import { wallet } from '@rainbow-me/rainbowkit';
+-import { wallet } from 'babylon-react';
 +import { omniWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const wallets = [
@@ -427,7 +427,7 @@ npm i @rainbow-me/rainbowkit@^0.4.0 wagmi@^0.5.0
 यदि आप पहले `chainId` पर RPC URLs का निर्माण करते थे `createConnector`, तो अब आप `wagmi` के साथ `configureChains` का उपऔग करते हुए RPC URLs को internally handle करते हैं, ऐसा आप अपनी logic remove कर सकते हैं।
 
 ```diff
-import { connectorsForWallets, wallet, Chain, Wallet } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets, wallet, Chain, Wallet } from 'babylon-react';
 import { chain, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -497,7 +497,7 @@ npm i @rainbow-me/rainbowkit@^0.2.0 wagmi@^0.4.2
 RainbowKit के बजाय wagmi से `configureChains` को आयात करें:
 
 ```diff
-- import { configureChains } from '@rainbow-me/rainbowkit';
+- import { configureChains } from 'babylon-react';
 + import { configureChains } from 'wagmi';
 ```
 
@@ -506,7 +506,7 @@ RainbowKit के बजाय wagmi से `configureChains` को आया�
 RainbowKit अब `apiProvider` API का निर्यात नहीं करता है। इसे wagmi से अपने इच्छित प्रदाता से प्रतिस्थापित करें।
 
 ```diff
-- import { apiProvider } from '@rainbow-me/rainbowkit';
+- import { apiProvider } from 'babylon-react';
 ```
 
 #### Alchemy

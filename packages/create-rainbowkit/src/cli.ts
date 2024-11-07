@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import { createRequire } from 'node:module';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import chalk from 'chalk';
 import { Command } from 'commander';
 import cpy from 'cpy';
 import { execa } from 'execa';
 import fs from 'fs-extra';
+import { createRequire } from 'node:module';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import prompts from 'prompts';
 import validateNpmPackageName from 'validate-npm-package-name';
 import { detectPackageManager } from './detectPackageManager';
@@ -47,7 +47,7 @@ async function run() {
     const options = program.opts();
 
     const reservedPackageNames = [
-      '@rainbow-me/rainbowkit',
+      'babylon-react',
       'wagmi',
       'viem',
       'next',
@@ -162,7 +162,7 @@ async function run() {
 
     if (process.env.INSTALL_WORKSPACE_RAINBOWKIT !== 'true') {
       // Remove RainbowKit workspace dependency so we can install latest
-      delete pkgJson.dependencies['@rainbow-me/rainbowkit'];
+      delete pkgJson.dependencies['babylon-react'];
     }
 
     await fs.writeFile(
@@ -193,10 +193,7 @@ async function run() {
     if (process.env.INSTALL_WORKSPACE_RAINBOWKIT !== 'true') {
       await execa(
         packageManager,
-        [
-          packageManager === 'yarn' ? 'add' : 'install',
-          '@rainbow-me/rainbowkit',
-        ],
+        [packageManager === 'yarn' ? 'add' : 'install', 'babylon-react'],
         {
           cwd: targetPath,
           stdio: 'inherit',

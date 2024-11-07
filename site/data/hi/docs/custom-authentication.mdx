@@ -16,7 +16,7 @@ description: अपने स्वयं के प्रमाणीकरण 
 उदाहरण के लिए, हम एक प्रमाणीकरण एडाप्टर बना सकते हैं जो हमें [Ethereum के साथ साइन-इन करने](https://login.xyz) की अनुमति देता है कुछ [कस्टम API एंड पॉइंट्स](https://wagmi.sh/examples/sign-in-with-ethereum) के खिलाफ।
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

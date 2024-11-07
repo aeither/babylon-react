@@ -12,7 +12,7 @@ You can import individual wallets from `'@rainbow-me/rainbowkit/wallets'` along 
 For example, you can choose to only show Rainbow along with generic fallback wallets.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 You can then pass your connectors to Wagmi's `createConfig`.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -424,7 +424,7 @@ Here are a few examples of displaying different wallets, in different order.
 Show MetaMask along with generic fallback wallets.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -444,7 +444,7 @@ const connectors = connectorsForWallets(
 Show Rainbow, MetaMask and Coinbase along with generic fallback wallets.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -477,7 +477,7 @@ You can use the `groupName` key to name different wallet groups. This is useful 
 Recommend Rainbow and MetaMask, but also offer Coinbase along with generic fallback wallets.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

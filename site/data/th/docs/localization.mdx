@@ -14,7 +14,7 @@ description: การปรับแต่งภาษาของ dApp ขอ�
 เพื่อระบุภาษาสำหรับผู้ใช้ของคุณ แค่เพิ่ม `locale="zh-CN"` เป็น prop ใน `RainbowKitProvider` ของคุณ
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ export const App = () => (
 จากนั้นส่ง `locale` ที่ได้รับจาก Pages Router ไปยัง `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

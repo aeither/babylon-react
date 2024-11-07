@@ -6,11 +6,11 @@ import {
   useAddRecentTransaction,
   useChainModal,
   useConnectModal,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import type { GetServerSideProps } from 'next';
 import { getServerSession } from 'next-auth';
 import { useSession } from 'next-auth/react';
-import React, { type ComponentProps, useEffect, useState } from 'react';
+import { type ComponentProps, useEffect, useState } from 'react';
 import { type Address, parseEther } from 'viem';
 import {
   useAccount,

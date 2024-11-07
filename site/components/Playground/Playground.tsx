@@ -6,7 +6,7 @@ import {
   darkTheme,
   lightTheme,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import clsx from 'clsx';
 import { Box } from 'components/Box/Box';
 import { MeshGradient } from 'components/MeshGradient/MeshGradient';

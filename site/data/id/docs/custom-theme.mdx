@@ -14,7 +14,7 @@ description: Membuat tema khusus
 Meskipun tema bawaan menyediakan beberapa tingkat kustomisasi, tipe `Theme` disediakan untuk membantu Anda mendefinisikan tema kustom Anda sendiri dengan akses tingkat rendah ke variabel tema dasar.
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -97,7 +97,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 Kemudian, gabungkan tema bawaan, dengan token tema yang ingin Anda ganti. Dalam contoh ini, saya mengganti token `accentColor` untuk mencocokkan warna aksen merek saya.
@@ -139,7 +139,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

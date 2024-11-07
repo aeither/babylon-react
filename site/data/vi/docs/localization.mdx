@@ -14,7 +14,7 @@ Nếu có, RainbowKit sẽ phát hiện [ngôn ngữ ưa thích](https://develop
 Để chỉ định một ngôn ngữ cho người dùng của bạn, thêm `locale="zh-CN"` như một thuộc tính trong `RainbowKitProvider` của bạn
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ Cấu hình dự án Next.js của bạn như ví dụ dưới đây để thêm
 Sau đó chuyển `locale` do Pages Router cung cấp đến `RainbowKitProvider`
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

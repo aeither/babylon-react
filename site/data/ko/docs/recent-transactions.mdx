@@ -14,7 +14,7 @@ RainbowKit의 계정 모달에서 최근 거래 내역을 표시하는 선택을
 이 기능을 사용하려면 먼저 `RainbowKitProvider`에서 `showRecentTransactions` 옵션을 활성화합니다.
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 그런 다음 `useAddRecentTransaction` 훅을 사용하여 거래 내역을 RainbowKit에 등록할 수 있습니다.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ export default () => {
 기본적으로 거래는 한 블록이 채굴된 후 완료된 것으로 간주되지만, 사용자 정의 확인 값을 지정하여 이를 구성할 수 있습니다.
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

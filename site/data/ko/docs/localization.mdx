@@ -14,7 +14,7 @@ description: 기본 제공 번역을 사용하여 dApp의 언어 사용자 정�
 사용자에게 언어를 지정하려면, `RainbowKitProvider`에 `locale="zh-CN"`을 prop로 추가하면 됩니다.
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 export const App = () => (
   <RainbowKitProvider locale="zh-CN" {...etc}>
@@ -42,7 +42,7 @@ RainbowKit의 지역화 지원은 [하위 경로 라우팅](https://nextjs.org/d
 그런 다음 Pages Router에서 제공하는 `locale`을 `RainbowKitProvider`에 전달하십시오.
 
 ```tsx
-import { RainbowKitProvider, Locale } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Locale } from 'babylon-react';
 
 export const App = () => {
   const { locale } = useRouter() as { locale: Locale };

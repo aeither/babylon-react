@@ -10,7 +10,7 @@ description: Personalizando as informações do seu aplicativo
 Você pode passar as informações do seu aplicativo na prop 'appInfo' para 'RainbowKitProvider'. As propriedades que você pode modificar são o nome do seu aplicativo ('appName') e o link para onde o botão “Saiba Mais” do modal de conexão redireciona ('learnMoreUrl'):
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -35,7 +35,7 @@ Você pode fornecer seu próprio aviso legal para ser exibido na parte inferior 
 import {
   RainbowKitProvider,
   DisclaimerComponent,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const Disclaimer: DisclaimerComponent = ({ Text, Link }) => (
   <Text>

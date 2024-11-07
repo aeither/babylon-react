@@ -1,5 +1,5 @@
+import type { Locale } from 'babylon-react';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import type { Locale } from '@rainbow-me/rainbowkit';
 import { Providers } from './providers';
 
 export function generateStaticParams() {

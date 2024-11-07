@@ -12,7 +12,7 @@ Anda dapat mengimpor dompet individual dari `'@rainbow-me/rainbowkit/wallets'` b
 Misalnya, Anda bisa memilih untuk hanya menunjukkan Rainbow bersama dengan dompet pengganti generik.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   walletConnectWallet,
@@ -35,7 +35,7 @@ const connectors = connectorsForWallets(
 Anda kemudian dapat meneruskan konektor Anda ke `createConfig` milik Wagmi.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig } from 'wagmi';
 
 const connectors = connectorsForWallets(/* ... */);
@@ -400,7 +400,7 @@ Berikut ini adalah beberapa contoh menampilkan dompet yang berbeda, dalam urutan
 Menampilkan MetaMask bersama dengan dompet fallback generik.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   metaMaskWallet,
   walletConnectWallet,
@@ -420,7 +420,7 @@ const connectors = connectorsForWallets(
 Tampilkan Rainbow, MetaMask dan Coinbase bersama dengan dompet cadangan generik.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,
@@ -453,7 +453,7 @@ Anda dapat menggunakan kunci `groupName` untuk menamai grup dompet yang berbeda.
 Rekomendasikan Rainbow dan MetaMask, tetapi juga tawarkan Coinbase bersama dengan dompet cadangan generik.
 
 ```tsx
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets } from 'babylon-react';
 import {
   rainbowWallet,
   metaMaskWallet,

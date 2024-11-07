@@ -1,5 +1,5 @@
-import { connectorsForWallets } from '@rainbow-me/rainbowkit';
 import { argentWallet, rainbowWallet } from '@rainbow-me/rainbowkit/wallets';
+import { connectorsForWallets } from 'babylon-react';
 import { createConfig, http } from 'wagmi';
 import { mainnet } from 'wagmi/chains';
 import { coinbaseWallet, metaMask } from 'wagmi/connectors';

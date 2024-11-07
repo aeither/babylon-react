@@ -14,7 +14,7 @@ RainbowKitのアカウントモーダル内に最近の取引を表示するよ�
 `RainbowKitProvider`で`showRecentTransactions`オプションを有効にしてこの機能を使用します。
 
 ```tsx
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider } from 'babylon-react';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
 `useAddRecentTransaction`フックを使用して取引をRainbowKitに登録できます。
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();
@@ -53,7 +53,7 @@ export default () => {
 デフォルトでは、トランザクションが採掘されたブロックの上に1つのブロックが採掘されると、トランザクションは完了したと見なされますが、カスタム`confirmations`値を指定することでこれを設定できます。
 
 ```tsx
-import { useAddRecentTransaction } from '@rainbow-me/rainbowkit';
+import { useAddRecentTransaction } from 'babylon-react';
 
 export default () => {
   const addRecentTransaction = useAddRecentTransaction();

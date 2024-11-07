@@ -39,9 +39,9 @@ npm i @tanstack/react-query
 + import { WagmiProvider, http } from 'wagmi'
 - import { configureChains, createConfig } from 'wagmi'
   import { mainnet } from 'wagmi/chains'
-  import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-- import { getDefaultWallets, connectorsForWallets } from '@rainbow-me/rainbowkit'
-+ import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+  import { RainbowKitProvider } from 'babylon-react'
+- import { getDefaultWallets, connectorsForWallets } from 'babylon-react'
++ import { getDefaultConfig } from 'babylon-react'
 
   /* getDefaultWallets is now optional */
 - const { wallets } = getDefaultWallets({
@@ -138,7 +138,7 @@ Es ist nicht mehr erforderlich, `chains` an `<RainbowKitProvider>` zu übergeben
 Der `Chain`-Typ hat sich in Übereinstimmung mit Wagmi v2 geändert und unterstützt weiterhin RainbowKits `iconUrl` und `iconBackground` Metadaten.
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 
   const avalanche = {
     id: 43_114,
@@ -179,7 +179,7 @@ const config = getDefaultConfig({
 Beispiel mit `createConfig`:
 
 ```diff
-+ import { Chain } from '@rainbow-me/rainbowkit'
++ import { Chain } from 'babylon-react'
 + const chains: readonly [Chain, ...Chain[]] = [
 +   {
 +     ...mainnet,
@@ -360,8 +360,8 @@ Wenn Sie `wagmi`-Hooks in Ihrer Anwendung verwenden, müssen Sie überprüfen, o
 Wenn Sie eine benutzerdefinierte Wallet-Liste erstellen, müssen Sie jetzt jedes Wallet einzeln importieren, um die Bundle-Größe zu reduzieren. Beachten Sie, dass Wallets nicht mehr über das `wallet`-Objekt namensbasiert sind und nun alle ein `Wallet`-Suffix haben.
 
 ```diff
--import { connectorsForWallets, wallet } from '@rainbow-me/rainbowkit';
-+import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+-import { connectorsForWallets, wallet } from 'babylon-react';
++import { connectorsForWallets } from 'babylon-react';
 +import {
 +  injectedWallet,
 +  rainbowWallet,
@@ -387,7 +387,7 @@ const wallets = [
 Beachten Sie auch, dass die Steakwallet-Rückwärtskompatibilitätsschicht entfernt wurde. Omni sollte stattdessen verwendet werden.
 
 ```diff
--import { wallet } from '@rainbow-me/rainbowkit';
+-import { wallet } from 'babylon-react';
 +import { omniWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const wallets = [
@@ -425,7 +425,7 @@ Entfernt den `chainId` Parameter von `createConnector` im `Wallet` Typ.
 Wenn Sie zuvor RPC-URLs aus der `chainId` auf `createConnector` abgeleitet haben, können Sie diese Logik jetzt entfernen, da `wagmi` jetzt RPC-URLs intern verwaltet, wenn es mit `configureChains` verwendet wird.
 
 ```diff
-import { connectorsForWallets, wallet, Chain, Wallet } from '@rainbow-me/rainbowkit';
+import { connectorsForWallets, wallet, Chain, Wallet } from 'babylon-react';
 import { chain, configureChains } from 'wagmi';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
@@ -495,7 +495,7 @@ npm i @rainbow-me/rainbowkit@^0.2.0 wagmi@^0.4.2
 Importieren Sie `configureChains` von wagmi anstelle von RainbowKit:
 
 ```diff
-- import { configureChains } from '@rainbow-me/rainbowkit';
+- import { configureChains } from 'babylon-react';
 + import { configureChains } from 'wagmi';
 ```
 
@@ -504,7 +504,7 @@ Importieren Sie `configureChains` von wagmi anstelle von RainbowKit:
 RainbowKit exportiert keine `apiProvider` API mehr. Ersetzen Sie es durch den gewünschten Anbieter von wagmi.
 
 ```diff
-- import { apiProvider } from '@rainbow-me/rainbowkit';
+- import { apiProvider } from 'babylon-react';
 ```
 
 #### Alchemy

@@ -16,7 +16,7 @@ RainbowKit надає [першокласну підтримку для Sign-In 
 Наприклад, ми можемо зробити адаптер автентифікації, який дозволяє нам використовувати [Sign-In with Ethereum](https://login.xyz) з деякими [користувацькими API-кінцевими точками.](https://wagmi.sh/examples/sign-in-with-ethereum)
 
 ```tsx
-import { createAuthenticationAdapter } from '@rainbow-me/rainbowkit';
+import { createAuthenticationAdapter } from 'babylon-react';
 import { SiweMessage } from 'siwe';
 
 const authenticationAdapter = createAuthenticationAdapter({
@@ -66,7 +66,7 @@ import {
   createAuthenticationAdapter,
   RainbowKitAuthenticationProvider,
   RainbowKitProvider,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { AppProps } from 'next/app';
 import { WagmiProvider } from 'wagmi';
 import {

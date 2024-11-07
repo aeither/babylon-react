@@ -12,7 +12,7 @@ description: การสร้างธีมที่กำหนดเอง
 ในขณะที่ธีมที่สร้างไว้แล้วให้ระดับการปรับแต่งบางอย่าง แต่ชนิด `Theme` ให้ช่วยคุณกำหนดธีมที่กำหนดเองด้วยการเข้าถึงตัวแปรธีมพื้นฐานในระดับล่าง
 
 ```tsx
-import { RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
+import { RainbowKitProvider, Theme } from 'babylon-react';
 
 const myCustomTheme: Theme = {
   blurs: {
@@ -95,7 +95,7 @@ import {
   RainbowKitProvider,
   darkTheme,
   Theme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 ```
 
 จากนั้น รวมธีมที่สร้างไว้แล้วกับโทเค็นธีมที่คุณต้องการเปลี่ยนแปลง ในตัวอย่างนี้ ฉันกำลังเปลี่ยนแปลงโทเค็น `accentColor` ให้ตรงกับสีของยี่ห้อของฉัน
@@ -137,7 +137,7 @@ import {
   cssStringFromTheme,
   lightTheme,
   darkTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 
 const App = () => {
   return (

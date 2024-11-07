@@ -1,7 +1,7 @@
 import {
   RainbowKitAuthenticationProvider,
   createAuthenticationAdapter,
-} from '@rainbow-me/rainbowkit';
+} from 'babylon-react';
 import { getCsrfToken, signIn, signOut, useSession } from 'next-auth/react';
 import React, { type ReactNode, useMemo } from 'react';
 import type { Address } from 'viem';
