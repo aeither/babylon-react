@@ -1,5 +1,5 @@
-import { rainbowWallet } from '@rainbow-me/rainbowkit/wallets';
 import { connectorsForWallets } from 'babylon-react';
+import { rainbowWallet } from 'babylon-react/wallets';
 import type { CreateConnectorFn } from 'wagmi';
 
 export type RainbowConnectorOptions = Parameters<typeof rainbowWallet>[0] & {

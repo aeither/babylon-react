@@ -1,4 +1,4 @@
-import '@rainbow-me/rainbowkit/styles.css';
+// import '@rainbow-me/rainbowkit/styles.css';
 import './global.css';
 
 import type { Session } from 'next-auth';
@@ -24,6 +24,7 @@ import {
 } from 'babylon-react';
 import { WagmiProvider, useDisconnect } from 'wagmi';
 
+import ClientOnly from '../components/ClientOnly';
 import type { AppContextProps } from '../lib/AppContextProps';
 import { config } from '../wagmi';
 
@@ -179,7 +180,9 @@ function RainbowKitApp({
             ...selectedBackgroundStyles,
           }}
         >
-          <Component {...pageProps} {...appContextProps} />
+          <ClientOnly>
+            <Component {...pageProps} {...appContextProps} />
+          </ClientOnly>
 
           {/* {isMounted && (
             <>

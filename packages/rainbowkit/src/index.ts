@@ -5,17 +5,17 @@ export { ConnectButton } from './components/ConnectButton/ConnectButton';
 export type { DisclaimerComponent } from './components/RainbowKitProvider/AppContext';
 export {
   RainbowKitAuthenticationProvider,
-  createAuthenticationAdapter,
+  createAuthenticationAdapter
 } from './components/RainbowKitProvider/AuthenticationContext';
 export type {
   AuthenticationConfig,
-  AuthenticationStatus,
+  AuthenticationStatus
 } from './components/RainbowKitProvider/AuthenticationContext';
 export type { AvatarComponent } from './components/RainbowKitProvider/AvatarContext';
 export {
   useAccountModal,
   useChainModal,
-  useConnectModal,
+  useConnectModal
 } from './components/RainbowKitProvider/ModalContext';
 export type { RainbowKitChain as Chain } from './components/RainbowKitProvider/RainbowKitChainContext';
 export { RainbowKitProvider } from './components/RainbowKitProvider/RainbowKitProvider';
@@ -36,8 +36,14 @@ export type {
   RainbowKitWalletConnectParameters,
   Wallet,
   WalletDetailsParams,
-  WalletList,
+  WalletList
 } from './wallets/Wallet';
 
 export { BabylonConnectButton } from '../components/BabylonConnectButton';
+export {
+  useFinalityProviders,
+  type FinalityProvidersResponse
+} from '../hooks/useFinalityProviders';
+export { useFinalityProvidersData } from '../hooks/useFinalityProvidersData';
 export { BabylonProviders } from '../providers/BabylonProviders';
+
