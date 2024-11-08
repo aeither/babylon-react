@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { useError } from '../components/ErrorContext.js';
+// import { useError } from '../components/ErrorContext.js';
 import { getNetworkConfig } from '../providers/network.config.js';
 import type { WalletProvider } from '../providers/wallet_provider.js';
 import { UTXO_KEY } from '../utils/constants';
@@ -31,7 +31,7 @@ export const useWalletBalance = (
   btcWallet: WalletProvider | undefined,
   address: string,
 ) => {
-  const { isErrorOpen } = useError();
+  // const { isErrorOpen } = useError();
 
   const { data: balance, isLoading } = useQuery({
     queryKey: [UTXO_KEY, address],
@@ -53,7 +53,7 @@ export const useWalletBalance = (
     },
     enabled: !!address,
     refetchInterval: 60000 * 5,
-    retry: (failureCount) => !isErrorOpen && failureCount <= 3,
+    retry: (failureCount) => failureCount <= 3,
     initialData: 0,
   });
 

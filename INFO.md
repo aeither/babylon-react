@@ -22,7 +22,7 @@ pnpm publish packages/rainbowkit --access public --no-git-checks
 Installing dependencies with filter by name
 
 ```bash
-pnpm add -D tailwindcss postcss autoprefixer --filter babylon-react
+pnpm add @babylonlabs-io/btc-staking-ts bitcoinjs-lib --filter babylon-react
 ```
 
 ```bash

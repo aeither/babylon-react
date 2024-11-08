@@ -45,5 +45,8 @@ export {
   type FinalityProvidersResponse
 } from '../hooks/useFinalityProviders';
 export { useFinalityProvidersData } from '../hooks/useFinalityProvidersData';
+export { useWalletConnection } from '../hooks/useWalletConnection';
 export { BabylonProviders } from '../providers/BabylonProviders';
+export { walletList } from '../providers/list';
+export type { WalletProvider } from '../providers/wallet_provider';
 

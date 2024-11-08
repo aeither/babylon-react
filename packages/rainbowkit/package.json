@@ -66,6 +66,7 @@
     "vitest": "2.0.5"
   },
   "dependencies": {
+    "@babylonlabs-io/btc-staking-ts": "^0.3.0",
     "@vanilla-extract/css": "1.15.5",
     "@vanilla-extract/dynamic": "2.1.2",
     "@vanilla-extract/sprinkles": "1.6.3",
@@ -79,7 +80,8 @@
     "react-tooltip": "^5.28.0",
     "tailwind-merge": "^2.5.4",
     "ua-parser-js": "^1.0.37",
-    "url-safe-base64": "^1.3.0"
+    "url-safe-base64": "^1.3.0",
+    "zustand": "^5.0.1"
   },
   "repository": {
     "type": "git",

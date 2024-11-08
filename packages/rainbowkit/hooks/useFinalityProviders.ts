@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import { create } from 'zustand';
 
 interface Description {
   moniker: string;
@@ -22,6 +23,20 @@ export interface FinalityProvidersResponse {
   data: FinalityProvider[];
 }
 
+// Zustand store for selected finality provider
+interface FinalityProviderStore {
+  selectedFinalityProvider: FinalityProvider | null;
+  selectFinalityProvider: (provider: FinalityProvider | null) => void;
+}
+
+export const useFinalityProviderStore = create<FinalityProviderStore>(
+  (set) => ({
+    selectedFinalityProvider: null,
+    selectFinalityProvider: (provider) =>
+      set({ selectedFinalityProvider: provider }),
+  }),
+);
+
 const FINALITY_PROVIDERS_URL =
   'https://staking-api.testnet.babylonchain.io/v1/finality-providers';
 
@@ -43,4 +58,17 @@ export const useFinalityProviders = () => {
       return response.json() as unknown as FinalityProvidersResponse;
     },
   });
+};
+
+// Helper hook to combine data fetching and selection
+export const useFinalityProvidersWithSelection = () => {
+  const { selectedFinalityProvider, selectFinalityProvider } =
+    useFinalityProviderStore();
+  const finalityProvidersQuery = useFinalityProviders();
+
+  return {
+    ...finalityProvidersQuery,
+    selectedFinalityProvider,
+    selectFinalityProvider,
+  };
 };
