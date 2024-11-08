@@ -6,7 +6,7 @@ pn run build:basin
 ```
 
 ```bash
-pn dev:next
+pn dev
 ```
 
 ## Publish to NPM
@@ -26,7 +26,7 @@ pnpm add @babylonlabs-io/btc-staking-ts bitcoinjs-lib --filter babylon-react
 ```
 
 ```bash
-pnpm install -D tailwindcss postcss autoprefixer --filter example
+pnpm install react-responsive-modal tailwind-merge react-icons react-tooltip --filter example
 ```
 
 ## Troubleshooting

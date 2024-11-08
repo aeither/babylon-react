@@ -1,7 +1,7 @@
 // src/app/page.tsx
 
 import {
-  BabylonConnectButton,
+  // BabylonConnectButton,
   BabylonProviders,
   useFinalityProviders,
   useWalletConnection,
@@ -15,6 +15,7 @@ import type {
   ReactNode,
   ReactPortal,
 } from 'react';
+import { BabylonConnectButton } from '../components/BabylonConnectButton';
 
 const FinalityProvidersComponent = () => {
   const { data, isLoading, error } = useFinalityProviders();

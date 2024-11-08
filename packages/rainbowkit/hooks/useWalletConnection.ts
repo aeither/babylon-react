@@ -184,7 +184,7 @@ export const useWalletConnection = () => {
         btcWalletNetwork,
         address,
         publicKeyNoCoord,
-        1, //feeRate,
+        1, //feeRate, 
         [
           {
             txid: 'd5584535c35623e68e30f9402448e4d6978ee15d60564a5c0776c27b7bf05e25',
