@@ -1,5 +1,7 @@
 # Babylon React SDK
 
+![logo](https://github.com/user-attachments/assets/5fb687d3-8ec2-48b7-a2b6-8fbb335f9328)
+
 # Usage
 
 ![one](https://github.com/user-attachments/assets/c74b5355-05cb-41e3-aacb-a73e9648ca15)
