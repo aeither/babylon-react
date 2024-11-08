@@ -10,9 +10,9 @@
 ## Dev
 
 ```bash
-pn run build:basin
+pnpm run build:basin
 ```
 
 ```bash
-pn dev
+pnpm dev
 ```
